@@ -1,0 +1,543 @@
+{
+	// Place your snippets for typescript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	// Genericos:
+	//▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+	//Bloques de comentarios y separadores:
+	"bqComentario-XS-style1": {
+		"prefix": "bqComentario-XS-style1",
+		"body": [
+			"//================================",
+			"//$1",
+			"",
+			"//================================"
+		],
+		"description": "bloque de comentario de tamaño minusculo 32 caracteres, style ==="
+	},
+	"bqComentario-S-style1": {
+		"prefix": "bqComentario-S-style1",
+		"body": [
+			"//================================================",
+			"//$1",
+			"",
+			"//================================================"
+		],
+		"description": "bloque de comentario de tamanno pequenno 48 caracteres, style ==="
+	},
+	"bqComentario-M-style1": {
+		"prefix": "bqComentario-M-style1",
+		"body": [
+			"//================================================================",
+			"//$1",
+			"",
+			"//================================================================"
+		],
+		"description": "bloque de comentario de tamanno mediano 64 caracteres, style ==="
+	},
+	"bqComentario-L-style1": {
+		"prefix": "bqComentario-L-style1",
+		"body": [
+			"//================================================================================================================================",
+			"//$1",
+			"",
+			"//================================================================================================================================"
+		],
+		"description": "bloque de comentario de de tamanno grande 128 caracteres, style ==="
+	},
+	"separador-XS-style1": {
+		"prefix": "bqSeparador-XS-style1",
+		"body": [
+			"//================================",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamaño minusculo 32 caracteres, style ==="
+	},
+	"separador-S-style1": {
+		"prefix": "bqSeparador-S-style1",
+		"body": [
+			"//================================================",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamanno pequenno 48 caracteres, style ==="
+	},
+	"separador-M-style1": {
+		"prefix": "bqSeparador-M-style1",
+		"body": [
+			"//================================================================",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamanno mediano 64 caracteres, style ==="
+	},
+	"separador-L-style1": {
+		"prefix": "bqSeparador-L-style1",
+		"body": [
+			"//================================================================================================================================",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamanno grande 128 caracteres, style ==="
+	},
+	"bqComentario-XS-style2": {
+		"prefix": "bqComentario-XS-style2",
+		"body": [
+			"//████████████████████████████████",
+			"//$1",
+			"",
+			"//████████████████████████████████"
+		],
+		"description": "bloque de comentario de tamaño minusculo 32 caracteres, style ███"
+	},
+	"bqComentario-S-style2": {
+		"prefix": "bqComentario-S-style2",
+		"body": [
+			"//████████████████████████████████████████████████",
+			"//$1",
+			"",
+			"//████████████████████████████████████████████████"
+		],
+		"description": "bloque de comentario de tamanno pequenno 48 caracteres, style ███"
+	},
+	"bqComentario-M-style2": {
+		"prefix": "bqComentario-M-style2",
+		"body": [
+			"//████████████████████████████████████████████████████████████████",
+			"//$1",
+			"",
+			"//████████████████████████████████████████████████████████████████"
+		],
+		"description": "bloque de comentario de tamanno mediano 64 caracteres, style ███"
+	},
+	"bqComentario-L-style2": {
+		"prefix": "bqComentario-L-style2",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"//$1",
+			"",
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
+		],
+		"description": "bloque de comentario de de tamanno grande 128 caracteres, style ███"
+	},
+	"separador-XS-style2": {
+		"prefix": "bqSeparador-XS-style2",
+		"body": [
+			"//████████████████████████████████",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamaño minusculo 32 caracteres, style ███"
+	},
+	"separador-S-style2": {
+		"prefix": "bqSeparador-S-style2",
+		"body": [
+			"//████████████████████████████████████████████████",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamanno pequenno 48 caracteres, style ███"
+	},
+	"separador-M-style2": {
+		"prefix": "bqSeparador-M-style2",
+		"body": [
+			"//████████████████████████████████████████████████████████████████",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamanno mediano 64 caracteres, style ███"
+	},
+	"separador-L-style2": {
+		"prefix": "bqSeparador-L-style2",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"$1"
+		],
+		"description": "bloque de Separador sencillo de tamanno grande 128 caracteres, style ███"
+	},
+	"bqConstruccion-XS-style1": {
+		"prefix": "bqConstruccion-XS-style1",
+		"body": [
+			"//_______ <EN CONSTRUCCION> ______",
+			"$1",
+			"//________________________________"
+		],
+		"description": "bloque de seccion en construccion de tamanno minusculo 32 caracteres, style ___"
+	},
+	"bqConstruccion-S-style1": {
+		"prefix": "bqConstruccion-S-style1",
+		"body": [
+			"//______________ <EN CONSTRUCCION> _______________",
+			"$1",
+			"//________________________________________________"
+		],
+		"description": "bloque de seccion en construccion de tamanno pequenno 48 caracteres, style ___"
+	},
+	"bqConstruccion-M-style1": {
+		"prefix": "bqConstruccion-M-style1",
+		"body": [
+			"//______________________ <EN CONSTRUCCION> _______________________",
+			"$1",
+			"//________________________________________________________________"
+		],
+		"description": "bloque de seccion en construccion de tamanno mediano 64 caracteres, style ___"
+	},
+	"bqTEST-XS-style1": {
+		"prefix": "bqTEST-XS-style1",
+		"body": [
+			"//­­­___ <TEST> _____________________",
+			"//New:",
+			"\n",
+			"//________________________________",
+			"//Old:",
+			"\n",
+			"//________________________________"
+		],
+		"description": "bloque de codigo en testeo de tamanno pequenno 32 caracteres, style ___"
+	},
+	"bqTEST-S-style1": {
+		"prefix": "bqTEST-S-style1",
+		"body": [
+			"//­­­___ <TEST> _____________________________________",
+			"//New:",
+			"\n",
+			"//________________________________________________",
+			"//Old:",
+			"\n",
+			"//________________________________________________"
+		],
+		"description": "bloque de codigo en testeo de tamanno pequenno 48 caracteres, style ___"
+	},
+	"bqTEST-M-style1": {
+		"prefix": "bqTEST-M-style1",
+		"body": [
+			"//­­­___ <TEST> _____________________________________________________",
+			"//New:",
+			"\n",
+			"//________________________________________________________________",
+			"//Old:",
+			"\n",
+			"//________________________________________________________________"
+		],
+		"description": "bloque de codigo en testeo de tamanno pequenno 64 caracteres, style ___"
+	},
+	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	//metodos y propiedades, clases e interfaces:
+	"export-Interface": {
+		"prefix": "export-Interface",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*$1:*/",
+			"//",
+			"export interface $1 {",
+			"",
+			"}"
+		],
+		"description": "declara una interfaz y la exporta"
+	},
+	"export-Interface-Extends": {
+		"prefix": "export-Interface-Extends",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*$1:*/",
+			"//",
+			"export interface $1 extends $2 {",
+			"",
+			"}"
+		],
+		"description": "declara una interfaz con extension y la exporta"
+	},
+	"export-Enum": {
+		"prefix": "export-Enum",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*enum $1*/",
+			"//",
+			"export enum $1 {",
+			"    $2",
+			"}",
+			""
+		],
+		"description": "declara una enumeracion y la exporta"
+	},
+	"export-var": {
+		"prefix": "export-var",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*$1:*/",
+			"//",
+			"export var $1 = $2;",
+			""
+		],
+		"description": "declara un variable global y la exporta"
+	},
+	"export-Class": {
+		"prefix": "export-Class",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*class $1*/",
+			"//",
+			"export class $1 {",
+			"",
+			"    constructor() {}",
+			"",
+			"}",
+			""
+		],
+		"description": "declara una clase y la exporta"
+	},
+	"export-Class-Extends": {
+		"prefix": "export-Class-Extends",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*class $1 extends $2*/",
+			"//",
+			"export class $1 extends $2{",
+			"",
+			"    constructor(){",
+			"        super()",
+			"    }",
+			"",
+			"}"
+		],
+		"description": "declara una clase extendida o heredada y la exporta"
+	},
+	"export-Class-Implements": {
+		"prefix": "export-Class-Implements",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*class $1 implements $2*/",
+			"//",
+			"export class $1 implements $2 {",
+			"",
+			"    constructor(){}",
+			"",
+			"}"
+		],
+		"description": "declara una clase que implementa interfaces y la exporta"
+	},
+	"export-Class-Extends-Implements": {
+		"prefix": "export-Class-Extends-Implements",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*class $1 extends $2 implements $3*/",
+			"//",
+			"export class $1 extends $2 implements $3{",
+			"",
+			"    constructor(){",
+			"        super()",
+			"    }",
+			"",
+			"}"
+		],
+		"description": "declara una clase extendida o heredada y que tambien implementa interfaces; y la exporta"
+	},
+	"export-abstract-Class": {
+		"prefix": "export-abstract-Class",
+		"body": [
+			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			"/*abstract class $1*/",
+			"//",
+			"export abstract class $1{",
+			"    ",
+			"    constructor(){}",
+			"}",
+			""
+		],
+		"description": "clase abstracta para exportar"
+	},	
+	"public-method": {
+		"prefix": "public-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"public $1():$2{",
+			"    return;",
+			"}"
+		],
+		"description": "Metodo público estandar para typescript"
+	},
+	"public-static-method": {
+		"prefix": "public-static-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"public static $1():$2{",
+			"    return;",
+			"}",
+			""
+		],
+		"description": "Metodo público y estatico estandar para typescript"
+	},
+	"public-abstract-method": {
+		"prefix": "public-abstract-method",
+		"body": [
+			"public abstract $1():$2",
+			""
+		],
+		"description": "metodo abstracto publico, Recordar que debe declarar de una clase abstracta"
+	},
+	"private-method": {
+		"prefix": "private-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"private $1():$2{",
+			"    return;",
+			"}",
+			""
+		],
+		"description": "Metodo privado estandar para typescript"
+	},
+	"private-static-method": {
+		"prefix": "private-static-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"private static $1():$2{",
+			"    return;",
+			"}"
+		],
+		"description": "Metodo privado y estatico estandar para typescript"
+	},
+	"protected-method": {
+		"prefix": "protected-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"protected $1():$2{",
+			"",
+			"}"
+		],
+		"description": "metodo protegido, para clase padre e hijas"
+	},
+	"protected-static-method": {
+		"prefix": "protected-static-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"protected static $1():$2{",
+			"",
+			"}"
+		],
+		"description": "metodo protegido estatico, para clase padre e hijas"
+	},
+	"protected-abstract-method": {
+		"prefix": "protected-abstract-method",
+		"body": [
+			"/*$1()*/",
+			"//",
+			"//Parametros:",
+			"//",
+			"protected abstract $1():$2;",
+			""
+		],
+		"description": "metodo protegido abstracto, para clase padre e hijas"
+	},
+	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	//utilitarias del lenguaje:	  
+	"arrow-fn-bq": {
+		"prefix": "arrow-fn-bq",
+		"body": [
+			"($1) => {",
+			"    return;",
+			"}"
+		],
+		"description": "arrow function con bloque y retorno"
+	},
+	"arrow-fn-BasicError": {
+		"prefix": "arrow-fn-BasicError",
+		"body": [
+			"(error)=>{ console.log(error)}"
+		],
+		"description": "arrow function con bloque de error basico"
+	},
+	"ifArray-cast": {
+		"prefix": "ifArray-cast",
+		"body": [
+			"$1 = (Array.isArray($1)) ? $1 : [$1];"
+		],
+		"description": "determina si la variable es array y si no la transforma en array (recordar: se usa para una variable existente, si se quiere inicializar la variable se debe anteponer el   let  o  const  correspondiente)"
+	},
+	"ifArrayEmpty": {
+		"prefix": "ifArrayEmpty",
+		"body": [
+			"if (Array.isArray($1) && $1.length == 0) {",
+			"    ",
+			"}"
+		],
+		"description": "determina si es un array esta vacio"
+	},
+	"ifArrayNotEmpty": {
+		"prefix": "ifArrayNotEmpty",
+		"body": [
+			"if (Array.isArray($1) && $1.length > 0) {",
+			"    ",
+			"}"
+		],
+		"description": "determina si es un array y si NO esta vacio"
+	},
+	"ifNotUndefinedAndNotNull": {
+		"prefix": "ifNotUndefinedAndNotNull",
+		"body": [
+			"if ($1 && $1 != null) {",
+			"    $2",
+			"}"
+		],
+		"description": "determina si la variable No es indefinida y No es null"
+	},
+	"ifUndefinedOrNull": {
+		"prefix": "ifUndefinedOrNull",
+		"body": [
+			"if (!$1 || $1 == null) {",
+			"    $2",
+			"}"
+		],
+		"description": "determina si la variable es indefinida o es null"
+	},
+	"newPromise": {
+		"prefix": "newPromise",
+		"body": [
+			"new Promise( (resolve, reject) => {",
+			"    //resolve();",
+			"    //reject();",
+			"});"
+		],
+		"description": "crea una promesa vacia (se debe definir al menos el resolve() o reject())"
+	},
+	"while-Array-pop": {
+		"prefix": "while-Array-pop",
+		"body": [
+			"while($1.length > 0){",
+			"            ",
+			"    $1.pop();",
+			"}"
+		],
+		"description": "cre un while con la opcion de ir eliminando elementos de un array desde el ultimo al primero"
+	},
+	//utilitarias del typado:
+	"cast-unknown": {
+		"prefix": "cast-unknown",
+		"body": [
+			"let $1 = <$2><unknown>$3;"
+		],
+		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para extraer partes de un objeto)"
+	},
+}
