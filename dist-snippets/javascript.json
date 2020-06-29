@@ -293,6 +293,17 @@
 		],
 		"description": "determina si la variable No es indefinida y No es null"
 	},
+	"ifNotUndefinedAndNotNullAndTypeof": {
+		"prefix": "ifNotUndefinedAndNotNullAndTypeof",
+		"body": [
+			"if ($1 && $1 != null &&",
+			"    typeof($1) == \"$2\"",
+			") {",
+			"    ",
+			"}"
+		],
+		"description": "determina si la variable No es indefinida y No es null y tiene un tipo primitivo"
+	},
 	"ifUndefinedOrNull": {
 		"prefix": "ifUndefinedOrNull",
 		"body": [
