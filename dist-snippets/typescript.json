@@ -1269,8 +1269,8 @@
 		],
 		"description": "metodo abstracto publico, Recordar que debe declarar de una clase abstracta"
 	},
-	"public_method_Override": {
-		"prefix": "public_method_Override",
+	"public_override_method": {
+		"prefix": "public_override_method",
 		"body": [
 			"/**... */",
 			"public override $1():$2{",
@@ -1279,8 +1279,8 @@
 		],
 		"description": "Metodo público sobreescrito para typescript"
 	},
-	"public_method_Param_Override": {
-		"prefix": "public_method_Param_Override",
+	"public_override_method_param": {
+		"prefix": "public_override_method_param",
 		"body": [
 			"/**... */",
 			"public override $1($2):$3{",
@@ -1289,8 +1289,8 @@
 		],
 		"description": "Metodo público sobreescrito con parametros para typescript"
 	},
-	"public_static_method_Override": {
-		"prefix": "public_static_method_Override",
+	"public_static_override_method": {
+		"prefix": "public_static_override_method",
 		"body": [
 			"/**... */",
 			"public override static $1():$2{",
@@ -1299,8 +1299,8 @@
 		],
 		"description": "Metodo público y estatico sobreescrito para typescript"
 	},
-	"public_static_method_Param_Override": {
-		"prefix": "public_static_method_Param_Override",
+	"public_static_override_method_param": {
+		"prefix": "public_static_override_method_param",
 		"body": [
 			"/**... */",
 			"public override static $1($2):$3{",
@@ -1309,6 +1309,46 @@
 		],
 		"description": "Metodo público y estatico sobreescrito, con parametros, para typescript"
 	},
+	"public_async_method": {
+		"prefix": "public_async_method",
+		"body": [
+			"\t/**... */",
+			"\tpublic async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		  ],
+		"description": "Metodo público estandar para typescript"
+	},
+	"public_override_async_method": {
+		"prefix": "public_override_async_method",
+		"body": [
+			"\t/**... */",
+			"\tpublic override async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		  ],
+		"description": "Metodo público estandar para typescript"
+	},	
+	"public_static_async_method": {
+		"prefix": "public_static_async_method",
+		"body": [
+			"\t/**... */",
+			"\tpublic static async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		  ],
+		"description": "Metodo público estandar para typescript"
+	},
+	"public_static_override_async_method": {
+		"prefix": "public_static_override_async_method",
+		"body": [
+			"\t/**... */",
+			"\tpublic static override async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		  ],
+		"description": "Metodo público estandar para typescript"
+	},	
 	"private_method": {
 		"prefix": "private_method",
 		"body": [
@@ -1349,6 +1389,26 @@
 		],
 		"description": "Metodo privado y estatico estandar, con parametros, para typescript"
 	},
+	"private_async_method": {
+		"prefix": "private_async_method",
+		"body": [
+			"\t/**... */",
+			"\tprivate static async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		  ],
+		"description": "Metodo privado, asyncrono, estandar para typescript"
+	},
+	"private_static_async_method": {
+		"prefix": "private_static_async_method",
+		"body": [
+			"\t/**... */",
+			"\tprivate static async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		],
+		"description": "Metodo privado, estatico y asyncrono estandar para typescript"
+	},	
 	"protected_method": {
 		"prefix": "protected_method",
 		"body": [
@@ -1405,18 +1465,18 @@
 		],
 		"description": "metodo abstracto protegido, Recordar que debe declarar de una clase abstracta"
 	},
-	"protected_method_Override": {
-		"prefix": "protected_method_Override",
+	"protected_override_method": {
+		"prefix": "protected_override_method",
 		"body": [
 			"/**... */",
-			"protected override $1():$2{",
+			"protected override $1(): $2 {",
 			"\treturn;",
 			"}"
 		],
 		"description": "Metodo protegido sobreescrito para typescript"
 	},
-	"protected_method_Param_Override": {
-		"prefix": "protected_method_Param_Override",
+	"protected_override_method_param": {
+		"prefix": "protected_override_method_param",
 		"body": [
 			"/**... */",
 			"protected override $1($2): $3 {",
@@ -1425,18 +1485,18 @@
 		],
 		"description": "Metodo protegido sobreescrito con parametros para typescript"
 	},
-	"protected_static_method_Override": {
-		"prefix": "protected_static_method_Override",
+	"protected_static_override_method": {
+		"prefix": "protected_static_override_method",
 		"body": [
 			"/**... */",
-			"protected static override $1():$2{",
+			"protected static override $1(): $2 {",
 			"\treturn;",
 			"}"
 		],
 		"description": "Metodo protegido y estatico sobreescrito para typescript"
 	},
-	"protected_static_method_Param_Override": {
-		"prefix": "protected_static_method_Param_Override",
+	"protected_static_override_method_param": {
+		"prefix": "protected_static_override_method_param",
 		"body": [
 			"/**... */",
 			"protected static override $1($2): $3 {",
@@ -1445,6 +1505,46 @@
 		],
 		"description": "Metodo protegido y estatico sobreescrito, con parametros, para typescript"
 	},
+	"protected_async_method": {
+		"prefix": "protected_async_method",
+		"body": [
+			"\t/**... */",
+			"\tprotected async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		],
+		"description": "metodo protegido, asincrono, para clase padre e hijas"
+	},	
+	"protected_override_async_method": {
+		"prefix": "protected_override_async_method",
+		"body": [
+			"\t/**... */",
+			"\tprotected override async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		],
+		"description": "Metodo protegido, asincrono, sobreescrito para typescript"
+	},	
+	"protected_static_async_method": {
+		"prefix": "protected_async_method",
+		"body": [
+			"\t/**... */",
+			"\tprotected static async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		],
+		"description": "metodo estatico protegido, asincrono, para clase padre e hijas"
+	},	
+	"protected_static_override_async_method": {
+		"prefix": "protected_override_async_method",
+		"body": [
+			"\t/**... */",
+			"\tprotected static override async $1(): Promise<$2> {",
+			"\t\treturn;",
+			"\t}"
+		],
+		"description": "Metodo estatico protegido, asincrono, sobreescrito para typescript"
+	},	
 	"public_property": {
 		"prefix": "public_property",
 		"body": [
@@ -1469,16 +1569,16 @@
 		],
 		"description": "Propiedad o atributo público y estatico de una clase"
 	},
-	"public_property_override": {
-		"prefix": "public_property_override",
+	"public_override_property": {
+		"prefix": "public_override_property",
 		"body": [
 			"/**... */",
 			"public override $1: $2;"
 		],
 		"description": "Propiedad o atributo público y sobreescrito de una clase"
 	},
-	"public_static_property_override": {
-		"prefix": "public_static_property_override",
+	"public_static_override_property": {
+		"prefix": "public_static_override_property",
 		"body": [
 			"/**... */",
 			"public static override $1: $2;"
@@ -1557,8 +1657,8 @@
 		],
 		"description": "Propiedad o atributo protegido y estatico de una clase"
 	},
-	"protected_property_override": {
-		"prefix": "protected_property_override",
+	"protected_override_property": {
+		"prefix": "protected_override_property",
 		"body": [
 			"/**... */",
 			"protected override $1: $2;"
