@@ -1625,6 +1625,72 @@
 		  ],
 		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
 	},	
+	"public_override_get_virtual": {
+		"prefix": "public_override_get_virtual",
+		"body": [
+			"/**... */",
+			"public override get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad sobreescrita get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_override_set_virtual": {
+		"prefix": "public_override_set_virtual",
+		"body": [
+			"/**... */",
+			"public override set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad sobreescrita set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_override_set_and_get_virtual": {
+		"prefix": "public_override_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"public override get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"public override set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad sobreescrita get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_abstract_get_virtual": {
+		"prefix": "public_abstract_get_virtual",
+		"body": [
+			"/**... */",
+			"public abstract get $1(): ${2:Type};"
+		],
+		"description": "propiedad abstracta get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_abstract_set_virtual": {
+		"prefix": "public_abstract_set_virtual",
+		"body": [
+			"/**... */",
+			"public abstract set $1(): ${2:Type};"
+		  ],
+		"description": "propiedad abstracta set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_abstract_set_and_get_virtual": {
+		"prefix": "public_abstract_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"public abstract get $1(): ${2:Type};",
+			"/**... */",
+			"public abstract set $1(): ${2:Type};"
+		  ],
+		"description": "propiedad abstracta get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},		
 	"private_property": {
 		"prefix": "private_property",
 		"body": [
@@ -1665,6 +1731,112 @@
 		],
 		"description": "Propiedad o atributo protegido y sobreescrito de una clase"
 	},	
+	"protected_get_virtual": {
+		"prefix": "protected_get_virtual",
+		"body": [
+			"/**... */",
+			"protected get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_set_virtual": {
+		"prefix": "protected_set_virtual",
+		"body": [
+			"/**... */",
+			"protected set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_set_and_get_virtual": {
+		"prefix": "protected_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"protected get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"protected set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_override_get_virtual": {
+		"prefix": "protected_override_get_virtual",
+		"body": [
+			"/**... */",
+			"protected override get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad sobreescrita get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_override_set_virtual": {
+		"prefix": "protected_override_set_virtual",
+		"body": [
+			"/**... */",
+			"protected override set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad sobreescrita set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_override_set_and_get_virtual": {
+		"prefix": "protected_override_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"protected override get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"protected override set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad sobreescrita get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_abstract_get_virtual": {
+		"prefix": "protected_abstract_get_virtual",
+		"body": [
+			"/**... */",
+			"protected abstract get $1(): ${2:Type};"
+		],
+		"description": "propiedad abstracta get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_abstract_set_virtual": {
+		"prefix": "protected_abstract_set_virtual",
+		"body": [
+			"/**... */",
+			"protected abstract set $1(): ${2:Type};"
+		  ],
+		"description": "propiedad abstracta set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},		
+	"protected_abstract_set_and_get_virtual": {
+		"prefix": "protected_abstract_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"protected abstract get $1(): ${2:Type};",
+			"/**... */",
+			"protected abstract set $1(): ${2:Type};"
+		  ],
+		"description": "propiedad abstracta get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},		
 	//████Especializacion Patrones POO████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  
 	"export_Class_singleton": {
 		"prefix": "export_Class_singleton",
