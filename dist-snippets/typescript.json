@@ -12,543 +12,1756 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-	// Genericos:
-	//▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-	//Bloques de comentarios y separadores:
-	"bqComentario-XS-style1": {
-		"prefix": "bqComentario-XS-style1",
+	//████Bloques de comentarios y separadores████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	"comment_class": {
+		"prefix": "comment_class",
 		"body": [
-			"//================================",
-			"//$1",
-			"",
-			"//================================"
+		  "/** @info <hr>  ",
+		  " * *class* `$1` ",
+		  " *",
+		  " * **Descripcion:**  ",
+		  " * $2",
+		  " * ____",
+		  " */"
 		],
-		"description": "bloque de comentario de tamaño minusculo 32 caracteres, style ==="
+		"description": "Comentario de encabezado para clase sencilla, con opción descripcion simple"
 	},
-	"bqComentario-S-style1": {
-		"prefix": "bqComentario-S-style1",
+	"comment_class_T": {
+		"prefix": "comment_class_T",
 		"body": [
-			"//================================================",
-			"//$1",
-			"",
-			"//================================================"
+			"/** @info <hr>  ",
+			" * *class* `$1` ",
+			" *",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ",
+			" * ____",
+			" * *Types:*  ",
+			" * `$3`  ",
+			" * ____",
+			" */"
 		],
-		"description": "bloque de comentario de tamanno pequenno 48 caracteres, style ==="
+		"description": "Comentario de encabezado para clase sencilla con T (tipos genericos) , con opción descripcion simple"
 	},
-	"bqComentario-M-style1": {
-		"prefix": "bqComentario-M-style1",
+	"comment_abstract_class": {
+		"prefix": "comment_abstract_class",
 		"body": [
-			"//================================================================",
-			"//$1",
-			"",
-			"//================================================================"
+		  "/** @info <hr>  ",
+		  " * *abstract class* `$1` ",
+		  " *",
+		  " * **Descripcion:**  ",
+		  " * $2",
+		  " * ____",
+		  " */"
 		],
-		"description": "bloque de comentario de tamanno mediano 64 caracteres, style ==="
+		"description": "Comentario de encabezado para clase abstracta, con opción descripcion simple"
 	},
-	"bqComentario-L-style1": {
-		"prefix": "bqComentario-L-style1",
+	"comment_abstract_class_T": {
+		"prefix": "comment_abstract_class_T",
 		"body": [
-			"//================================================================================================================================",
-			"//$1",
-			"",
-			"//================================================================================================================================"
+			"/** @info <hr>  ",
+			" * *abstract class* `$1` ",
+			" *",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ",
+			" * ____",
+			" * *Types:*  ",
+			" * `$3`  ",
+			" * ____",
+			" */"
 		],
-		"description": "bloque de comentario de de tamanno grande 128 caracteres, style ==="
-	},
-	"separador-XS-style1": {
-		"prefix": "bqSeparador-XS-style1",
-		"body": [
-			"//================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamaño minusculo 32 caracteres, style ==="
-	},
-	"separador-S-style1": {
-		"prefix": "bqSeparador-S-style1",
-		"body": [
-			"//================================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno pequenno 48 caracteres, style ==="
-	},
-	"separador-M-style1": {
-		"prefix": "bqSeparador-M-style1",
-		"body": [
-			"//================================================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno mediano 64 caracteres, style ==="
-	},
-	"separador-L-style1": {
-		"prefix": "bqSeparador-L-style1",
-		"body": [
-			"//================================================================================================================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno grande 128 caracteres, style ==="
-	},
-	"bqComentario-XS-style2": {
-		"prefix": "bqComentario-XS-style2",
-		"body": [
-			"//████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████"
-		],
-		"description": "bloque de comentario de tamaño minusculo 32 caracteres, style ███"
-	},
-	"bqComentario-S-style2": {
-		"prefix": "bqComentario-S-style2",
-		"body": [
-			"//████████████████████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████████████████████"
-		],
-		"description": "bloque de comentario de tamanno pequenno 48 caracteres, style ███"
-	},
-	"bqComentario-M-style2": {
-		"prefix": "bqComentario-M-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████████████████████████████████████"
-		],
-		"description": "bloque de comentario de tamanno mediano 64 caracteres, style ███"
-	},
-	"bqComentario-L-style2": {
-		"prefix": "bqComentario-L-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
-		],
-		"description": "bloque de comentario de de tamanno grande 128 caracteres, style ███"
-	},
-	"separador-XS-style2": {
-		"prefix": "bqSeparador-XS-style2",
-		"body": [
-			"//████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamaño minusculo 32 caracteres, style ███"
-	},
-	"separador-S-style2": {
-		"prefix": "bqSeparador-S-style2",
-		"body": [
-			"//████████████████████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno pequenno 48 caracteres, style ███"
-	},
-	"separador-M-style2": {
-		"prefix": "bqSeparador-M-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno mediano 64 caracteres, style ███"
-	},
-	"separador-L-style2": {
-		"prefix": "bqSeparador-L-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno grande 128 caracteres, style ███"
-	},
-	"bqConstruccion-XS-style1": {
-		"prefix": "bqConstruccion-XS-style1",
-		"body": [
-			"//_______ <EN CONSTRUCCION> ______",
-			"$1",
-			"//________________________________"
-		],
-		"description": "bloque de seccion en construccion de tamanno minusculo 32 caracteres, style ___"
-	},
-	"bqConstruccion-S-style1": {
-		"prefix": "bqConstruccion-S-style1",
-		"body": [
-			"//______________ <EN CONSTRUCCION> _______________",
-			"$1",
-			"//________________________________________________"
-		],
-		"description": "bloque de seccion en construccion de tamanno pequenno 48 caracteres, style ___"
-	},
-	"bqConstruccion-M-style1": {
-		"prefix": "bqConstruccion-M-style1",
-		"body": [
-			"//______________________ <EN CONSTRUCCION> _______________________",
-			"$1",
-			"//________________________________________________________________"
-		],
-		"description": "bloque de seccion en construccion de tamanno mediano 64 caracteres, style ___"
-	},
-	"bqTEST-XS-style1": {
-		"prefix": "bqTEST-XS-style1",
-		"body": [
-			"//­­­___ <TEST> _____________________",
-			"//New:",
-			"\n",
-			"//________________________________",
-			"//Old:",
-			"\n",
-			"//________________________________"
-		],
-		"description": "bloque de codigo en testeo de tamanno pequenno 32 caracteres, style ___"
-	},
-	"bqTEST-S-style1": {
-		"prefix": "bqTEST-S-style1",
-		"body": [
-			"//­­­___ <TEST> _____________________________________",
-			"//New:",
-			"\n",
-			"//________________________________________________",
-			"//Old:",
-			"\n",
-			"//________________________________________________"
-		],
-		"description": "bloque de codigo en testeo de tamanno pequenno 48 caracteres, style ___"
-	},
-	"bqTEST-M-style1": {
-		"prefix": "bqTEST-M-style1",
-		"body": [
-			"//­­­___ <TEST> _____________________________________________________",
-			"//New:",
-			"\n",
-			"//________________________________________________________________",
-			"//Old:",
-			"\n",
-			"//________________________________________________________________"
-		],
-		"description": "bloque de codigo en testeo de tamanno pequenno 64 caracteres, style ___"
-	},
-	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-	//metodos y propiedades, clases e interfaces:
-	"export-Interface": {
-		"prefix": "export-Interface",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*$1:*/",
-			"//",
-			"export interface $1 {",
-			"",
-			"}"
-		],
-		"description": "declara una interfaz y la exporta"
-	},
-	"export-Interface-Extends": {
-		"prefix": "export-Interface-Extends",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*$1:*/",
-			"//",
-			"export interface $1 extends $2 {",
-			"",
-			"}"
-		],
-		"description": "declara una interfaz con extension y la exporta"
-	},
-	"export-Enum": {
-		"prefix": "export-Enum",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*enum $1*/",
-			"//",
-			"export enum $1 {",
-			"    $2",
-			"}",
-			""
-		],
-		"description": "declara una enumeracion y la exporta"
-	},
-	"export-var": {
-		"prefix": "export-var",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*$1:*/",
-			"//",
-			"export var $1 = $2;",
-			""
-		],
-		"description": "declara un variable global y la exporta"
-	},
-	"export-Class": {
-		"prefix": "export-Class",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*class $1*/",
-			"//",
-			"export class $1 {",
-			"",
-			"    constructor() {}",
-			"",
-			"}",
-			""
-		],
-		"description": "declara una clase y la exporta"
-	},
-	"export-Class-Extends": {
-		"prefix": "export-Class-Extends",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*class $1 extends $2*/",
-			"//",
-			"export class $1 extends $2{",
-			"",
-			"    constructor(){",
-			"        super()",
-			"    }",
-			"",
-			"}"
-		],
-		"description": "declara una clase extendida o heredada y la exporta"
-	},
-	"export-Class-Implements": {
-		"prefix": "export-Class-Implements",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*class $1 implements $2*/",
-			"//",
-			"export class $1 implements $2 {",
-			"",
-			"    constructor(){}",
-			"",
-			"}"
-		],
-		"description": "declara una clase que implementa interfaces y la exporta"
-	},
-	"export-Class-Extends-Implements": {
-		"prefix": "export-Class-Extends-Implements",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*class $1 extends $2 implements $3*/",
-			"//",
-			"export class $1 extends $2 implements $3{",
-			"",
-			"    constructor(){",
-			"        super()",
-			"    }",
-			"",
-			"}"
-		],
-		"description": "declara una clase extendida o heredada y que tambien implementa interfaces; y la exporta"
-	},
-	"export-abstract-Class": {
-		"prefix": "export-abstract-Class",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"/*abstract class $1*/",
-			"//",
-			"export abstract class $1{",
-			"    ",
-			"    constructor(){}",
-			"}",
-			""
-		],
-		"description": "clase abstracta para exportar"
+		"description": "Comentario de encabezado para clase abstracta con T (tipos genericos) , con opción descripcion simple"
 	},	
-	"public-method": {
-		"prefix": "public-method",
+	"comment_class_extends": {
+		"prefix": "comment_class_extends",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"public $1():$2{",
-			"    return;",
-			"}"
+			"/** @info <hr>  ",
+			" * *class* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *extends:*  ",
+			" * `$3`  ",
+			" * ____",
+			" */"
 		],
-		"description": "Metodo público estandar para typescript"
+		"description": "Comentario de encabezado para clase heredada , con opción descripcion simple"
 	},
-	"public-static-method": {
-		"prefix": "public-static-method",
+	"comment_class_extendsT": {
+		"prefix": "comment_class_extendsT",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"public static $1():$2{",
-			"    return;",
-			"}",
+			"/** @info <hr>  ",
+			" * *class* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *Types:*  ",
+			" * `$3`",
+			" * ",
+			" * *extends:*  ",
+			" * `$4`  ",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado para clase heredada, con T (tipos genericos) , con opción descripcion simple"
+	},
+	"comment_class_extends_implements": {
+		"prefix": "comment_class_extends_implements",
+		"body": [
+			"/** @info <hr>  ",
+			" * *class* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *extends:*  ",
+			" * `$3`",
+			" * ",
+			" * *implements*  ",
+			" * `$4`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado para clase heredada con implementacion de interfaces, con opción descripcion simple"
+	},
+	"comment_class_extends_implements_T": {
+		"prefix": "comment_class_extends_implements_T",
+		"body": [
+			"/** @info <hr>  ",
+			" * *class* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *Types:*  ",
+			" * `$3`",
+			" * ",
+			" * *extends:*  ",
+			" * `$4`",
+			" * ",
+			" * *implements*  ",
+			" * `$5`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado para clase heredada con implementacion de interfaces, con T (tipos genericos), con opción descripcion simple"
+	},
+	"comment_abstract_class_extends_implements": {
+		"prefix": "comment_abstract_class_extends_implements",
+		"body": [
+			"/** @info <hr>  ",
+			" * *abstract class* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *extends:*  ",
+			" * `$3`",
+			" * ",
+			" * *implements*  ",
+			" * `$4`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado para clase abtracta heredada con implementacion de interfaces, con opción descripcion simple"
+	},
+	"comment_abstract_class_extends_implements_T": {
+		"prefix": "comment_abstract_class_extends_implements_T",
+		"body": [
+			"/** @info <hr>  ",
+			" * *abstract class* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *Types:*  ",
+			" * `$3`",
+			" * ",
+			" * *extends:*  ",
+			" * `$4`",
+			" * ",
+			" * *implements*  ",
+			" * `$5`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado para clase abtracta heredada con implementacion de interfaces, con T (tipos genericos), con opción descripcion simple"
+	},
+	"comment_interface": {
+		"prefix": "comment_interface",
+		"body": [
+			"/** @info <hr>  ",
+			" * *interface* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado de interfaz sencilla, con descripción sencilla"
+	},
+	"comment_interface_T": {
+		"prefix": "comment_interface_T",
+		"body": [
+			"/** @info <hr>  ",
+			" * *interface* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *Types:*  ",
+			" * `$3`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado de interfaz sencilla, con T (Tipado Generico), con descripción sencilla"
+	},
+	"comment_interface_extends": {
+		"prefix": "comment_interface_extends",
+		"body": [
+			"/** @info <hr>  ",
+			" * *interface* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *extends:*  ",
+			" * `$3`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado de interfaz extendida, con descripción sencilla"
+	},
+	"comment_interface_extends_T": {
+		"prefix": "comment_interface_extends_T",
+		"body": [
+			"/** @info <hr>  ",
+			" * *interface* `$1`",
+			" * ",
+			" * **Descripción:**  ",
+			" * $2",
+			" * ____",
+			" * *extends:*  ",
+			" * `$3`",
+			" * ",
+			" * *Types:*  ",
+			" * `$4`",
+			" * ____",
+			" */"
+		],
+		"description": "Comentario de encabezado de interfaz extendida, con T (Tipado Generico), con descripción sencilla"
+	},
+	"comment_constructor_with_params": {
+		"prefix": "comment_constructor_with_params",
+		"body": [
+			"/** ",
+			" * ...",
+			" * ____",
+			" * @param $1",
+			" */"
+		],
+		"description": "Comentario de encabezado del metodo constructor, con parametros"
+	},
+	"comment_method_void": {
+		"prefix": "comment_method_void",
+		"body": [
+			"/** ",
+			" * ...",
+			" */"
+		],
+		"description": "Comentario de encabezado del metodo sin retorno"
+	},
+	"comment_method_return": {
+		"prefix": "comment_method_return",
+		"body": [
+			"/** ",
+			" * ...",
+			" * ____",
+			" * @returns $1",
+			" */"
+		],
+		"description": "Comentario de encabezado del metodo con retorno"
+	},	
+	"comment_method_void_with_params": {
+		"prefix": "comment_method_void_with_params",
+		"body": [
+			"/** ",
+			" * ...",
+			" * ____",
+			" * @param $1",
+			" */"
+		],
+		"description": "Comentario de encabezado del metodo sin retorno y con parametros"
+	},
+	"comment_method_return_with_params": {
+		"prefix": "comment_method_return_with_params",
+		"body": [
+			"/** ",
+			" * ...",
+			" * ____",
+			" * @param $1",
+			" * ____",		
+			" * @returns $2",	
+			" */"
+		],
+		"description": "Comentario de encabezado del metodo con retorno y con parametros"
+	},	
+	"comment_property": {
+		"prefix": "comment_property",
+		"body": [
+			"/** ...*/"
+		],
+		"description": "comentario de encabezado para un atributo o propiedad de una clase o interfaz o enum"
+	},
+	"comment_var": {
+		"prefix": "comment_var",
+		"body": [
+			"/** ...*/"
+		],
+		"description": "comentario de encabezado para una variable global (normalmente para exportar)"
+	},
+	"separador_XS_style1": {
+		"prefix": "bqSeparador_XS_style1",
+		"body": [
+			"//====${1/(.*)/${1:/upcase}/}===========================",
 			""
 		],
-		"description": "Metodo público y estatico estandar para typescript"
+		"description": "bloque de Separador sencillo con titulo de tamaño minusculo 32 caracteres + titulo, style ==="
 	},
-	"public-abstract-method": {
-		"prefix": "public-abstract-method",
+	"separador_S_style1": {
+		"prefix": "bqSeparador_S_style1",
 		"body": [
-			"public abstract $1():$2",
+			"//====${1/(.*)/${1:/upcase}/}============================================",
 			""
 		],
-		"description": "metodo abstracto publico, Recordar que debe declarar de una clase abstracta"
+		"description": "bloque de Separador sencillo con titulo de tamaño pequeño 48 caracteres + titulo, style ==="
 	},
-	"private-method": {
-		"prefix": "private-method",
+	"separador_M_style1": {
+		"prefix": "bqSeparador_M_style1",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"private $1():$2{",
-			"    return;",
-			"}",
+			"//====${1/(.*)/${1:/upcase}/}============================================================",
 			""
 		],
-		"description": "Metodo privado estandar para typescript"
+		"description": "bloque de Separador sencillo con titulo de tamaño mediano 64 caracteres + titulo, style ==="
 	},
-	"private-static-method": {
-		"prefix": "private-static-method",
+	"separador_L_style1": {
+		"prefix": "bqSeparador_L_style1",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"private static $1():$2{",
-			"    return;",
-			"}"
+			"//====${1/(.*)/${1:/upcase}/}============================================================================================================================",
+			""
 		],
-		"description": "Metodo privado y estatico estandar para typescript"
+		"description": "bloque de Separador sencillo con titulo de tamanno grande 128 caracteres + título, style ==="
 	},
-	"protected-method": {
-		"prefix": "protected-method",
+	"separador_XS_style2": {
+		"prefix": "bqSeparador_XS_style2",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"protected $1():$2{",
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño minusculo 32 caracteres + título, style ███"
+	},
+	"separador_S_style2": {
+		"prefix": "bqSeparador_S_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño pequenno 48 caracteres + título, style ███"
+	},
+	"separador_M_style2": {
+		"prefix": "bqSeparador_M_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████████████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño mediano 64 caracteres + título, style ███"
+	},
+	"separador_L_style2": {
+		"prefix": "bqSeparador_L_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño grande 128 caracteres + título, style ███"
+	},
+	"bqConstruccion_XS_style1": {
+		"prefix": "bqConstruccion_XS_style1",
+		"body": [
+			"/*--------------------------------*/",
+			"/*--------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -----*/",
 			"",
-			"}"
+			"/*---- <FIN CONSTRUCCION> --------*/",
+			"/*--------------------------------*/",
+			"/*--------------------------------*/"
 		],
-		"description": "metodo protegido, para clase padre e hijas"
+		"description": "bloque de seccion en construccion de tamanno minusculo 32 caracteres, style ----"
 	},
-	"protected-static-method": {
-		"prefix": "protected-static-method",
+	"bqConstruccion_S_style1": {
+		"prefix": "bqConstruccion_S_style1",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"protected static $1():$2{",
+			"/*------------------------------------------------*/",
+			"/*------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> ---------------------*/",
 			"",
+			"/*---- <FIN CONSTRUCCION> ------------------------*/",
+			"/*------------------------------------------------*/",
+			"/*------------------------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamanno pequenno 48 caracteres, style ----"
+	},
+	"bqConstruccion_M_style1": {
+		"prefix": "bqConstruccion_M_style1",
+		"body": [
+			"/*----------------------------------------------------------------*/",
+			"/*----------------------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -------------------------------------*/",
+			"",
+			"/*---- <FIN CONSTRUCCION> ----------------------------------------*/",
+			"/*----------------------------------------------------------------*/",
+			"/*----------------------------------------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamanno mediano 64 caracteres, style ----"
+	},
+	"bqConstruccion_L_style1": {
+		"prefix": "bqConstruccion_L_style1",
+		"body": [
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -----------------------------------------------------------------------------------------------------*/",
+			"",
+			"/*---- <FIN CONSTRUCCION> --------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamanno grande 128 caracteres, style ----"
+	},	
+	//███Utileria codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	"const_destructure_obj": {
+		"prefix": "const_destructure_obj",
+		"body": [
+		  "const {} = $1;"
+		],
+		"description": "establece de destructuracion de un objeto almacenada en una constante"
+	},
+	"function_basic": {
+		"prefix": "function_basic",
+		"body": [
+			"/**... */",
+			"function $1(): $2 {",
+			"\treturn;",
 			"}"
 		],
-		"description": "metodo protegido estatico, para clase padre e hijas"
+		"description": "funcion basica sin parametro"
 	},
-	"protected-abstract-method": {
-		"prefix": "protected-abstract-method",
+	"function_param_basic": {
+		"prefix": "function_param_basic",
 		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"protected abstract $1():$2;",
-			""
+			"/**... */",
+			"function $1($2): $3 {",
+			"\treturn;",
+			"}"
 		],
-		"description": "metodo protegido abstracto, para clase padre e hijas"
+		"description": "funcion basica con parametro"
 	},
-	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-	//utilitarias del lenguaje:	  
-	"arrow-fn-bq": {
-		"prefix": "arrow-fn-bq",
+	"arrow_fn_bq": {
+		"prefix": "arrow_fn_bq",
 		"body": [
 			"($1) => {",
-			"    return;",
+			"\treturn;",
 			"}"
 		],
 		"description": "arrow function con bloque y retorno"
 	},
-	"arrow-fn-BasicError": {
-		"prefix": "arrow-fn-BasicError",
+	"arrow_fn_generic_error": {
+		"prefix": "arrow_fn_generic_error",
 		"body": [
-			"(error)=>{ console.log(error)}"
+			"(error)=>{ console.log(error) }"
 		],
-		"description": "arrow function con bloque de error basico"
+		"description": "arrow function con bloque de error genérico"
 	},
-	"ifArray-cast": {
-		"prefix": "ifArray-cast",
+	"array_cast": {
+		"prefix": "array_cast",
 		"body": [
 			"$1 = (Array.isArray($1)) ? $1 : [$1];"
 		],
 		"description": "determina si la variable es array y si no la transforma en array (recordar: se usa para una variable existente, si se quiere inicializar la variable se debe anteponer el   let  o  const  correspondiente)"
 	},
-	"ifArrayEmpty": {
-		"prefix": "ifArrayEmpty",
+	"if_oneline_with_return": {
+		"prefix": "if_oneline_with_return",
+		"body": [
+			"if ($1) return $2;"
+		],
+		"description": "sentecia `if` sin bloques y con retorno inmediato "
+	},	
+	"if_else_if_assignment": {
+		"prefix": "if_else_if_assignment",
+		"body": [
+			"let $1",
+			"if (${2:Condition}) $1 = ${3:value};",
+			"else if(${4:Condition}) $1 = ${5:value};",
+			"else $1 = ${6:value};"
+		  ],
+		"description": "cascada de `if` else if else para asignamiento por seleccion sin bloque"
+	},	
+	"if_else__if_bq": {
+		"prefix": "if_else__if_bq",
+		"body": [
+			"if ($1) {",
+			"\t",
+			"}else if($2){",
+			"\t",
+			"}else{",
+			"\t",
+			"}"
+		  ],
+		"description": "cascada de if else if else básico con logica encapsulada en bloque"
+	},	
+	"switch_bq": {
+		"prefix": "switch_bq",
+		"body": [
+			"switch($1){",
+			"  case \"$2\":{",
+			"",
+			"  } break;",
+			"  case \"$3\":{",
+			"",
+			"  } break;",
+			"  default:{",
+			"",
+			"  }break;",
+			"}"
+		  ],
+		"description": "switch case con bloques en cada caso"
+	},		
+	"if_undefined_or_null": {
+		"prefix": "if_undefined_or_null",
+		"body": [
+			"if ($1 == undefined || $1 == null) {",
+			"\t$2",
+			"}"
+		],
+		"description": "determina si la variable es `null` o `undefined`"
+	},
+	"if_object": {
+		"prefix": "if_object",
+		"body": [
+		  "if (typeof $1 == \"object\" && $1 != null) {",
+		  "\t$2",
+		  "}"
+		],
+		"description": "determina si es un tipo objeto (incluidos arrays)"
+	},	
+	"if_array_empty": {
+		"prefix": "if_array_empty",
 		"body": [
 			"if (Array.isArray($1) && $1.length == 0) {",
-			"    ",
+			"\t$2",
 			"}"
 		],
-		"description": "determina si es un array esta vacio"
+		"description": "determina si es un array y esta vacio"
 	},
-	"ifArrayNotEmpty": {
-		"prefix": "ifArrayNotEmpty",
+	"if_array_not_empty": {
+		"prefix": "if_array_not_empty",
 		"body": [
 			"if (Array.isArray($1) && $1.length > 0) {",
-			"    ",
+			"\t$2",
 			"}"
 		],
-		"description": "determina si es un array y si NO esta vacio"
-	},
-	"ifNotUndefinedAndNotNull": {
-		"prefix": "ifNotUndefinedAndNotNull",
-		"body": [
-			"if ($1 && $1 != null) {",
-			"    $2",
-			"}"
-		],
-		"description": "determina si la variable No es indefinida y No es null"
-	},
-	"ifNotUndefinedAndNotNullAndTypeof": {
-		"prefix": "ifNotUndefinedAndNotNullAndTypeof",
-		"body": [
-			"if ($1 && $1 != null &&",
-			"    typeof($1) == \"$2\"",
-			") {",
-			"    ",
-			"}"
-		],
-		"description": "determina si la variable No es indefinida y No es null y tiene un tipo primitivo"
+		"description": "determina si es un array y no esta vacio"
 	},	
-	"ifUndefinedOrNull": {
-		"prefix": "ifUndefinedOrNull",
+	"if_object_not_Array": {
+		"prefix": "if_object_not_Array",
 		"body": [
-			"if (!$1 || $1 == null) {",
-			"    $2",
+		  "if (typeof $1 == \"object\" && $1 != null && !Array.isArray($1)) {",
+		  "\t$2",
+		  "}"
+		],
+		"description": "determina si es un tipo objeto (excluyendo el tipo array)"
+	},	
+	"if_float_number" : {
+		"prefix": "if_float_number",
+		"body": [
+			"const $1 = parseFloat(<string><unknown>$2);",
+			"if (typeof $1 == \"number\" && !isNaN($1)) {",
+			"\t$3",
+			"}"
+		  ],
+		"description": "determina si al hacer el cast es un numero flotante"
+	},
+	"if_float_number_cast": {
+		"prefix": "if_float_number_cast",
+		"body": [
+		  "let $1 = (!isNaN(parseFloat(<string><unknown>$1))) ?",
+		  "\tparseFloat(<string><unknown>$1) : $2 ;"
+		],
+		"description": "intenta convertir cualquier valor a numero flotante o asignar un numero por defecto en `$2`; si no permite el tipado se debe usar otro nombre de variable en `let $1` "
+	},	
+	"if_object_with_properties": {
+		"prefix": "if_object_with_properties",
+		"body": [
+			"if (typeof $1 == \"object\" && $1 != null && Object.keys($1).length > 0) {",
+			"\t$2",
 			"}"
 		],
-		"description": "determina si la variable es indefinida o es null"
+		"description": "Determina si la variable es un objeto y tiene propiedades"
 	},
-	"newPromise": {
-		"prefix": "newPromise",
+	"if_object_with_properties_not_array": {
+		"prefix": "if_object_with_properties_not_array",
+		"body": [
+			"if (typeof $1 == \"object\" && $1 != null && !Array.isArray($1) && Object.keys($1).length > 0) {",
+			"\t$2",
+			"}"
+		],
+		"description": "Determina si la variable es un objeto (excluyendo el tipo array) y tiene propiedades"
+	},	
+	"new_promise": {
+		"prefix": "new_promise",
 		"body": [
 			"new Promise( (resolve, reject) => {",
-			"    //resolve();",
-			"    //reject();",
+			"\t//return resolve();",
+			"\t//return reject();",
 			"});"
 		],
 		"description": "crea una promesa vacia (se debe definir al menos el resolve() o reject())"
 	},
-	"while-Array-pop": {
-		"prefix": "while-Array-pop",
+	"while_array_pop": {
+		"prefix": "while_array_pop",
 		"body": [
-			"while($1.length > 0){",
-			"            ",
-			"    $1.pop();",
+			"while($1.length > 0) {",
+			"",
+			"\t$1.pop();",
 			"}"
 		],
-		"description": "cre un while con la opcion de ir eliminando elementos de un array desde el ultimo al primero"
+		"description": "crea un while con la opcion de ir eliminando elementos de un array desde el ultimo al primero"
 	},
-	//utilitarias del typado:
-	"cast-unknown": {
-		"prefix": "cast-unknown",
+	"promise_time_generated": {
+		"prefix": "promise_time_generated",
+		"body": [
+		  "new Promise( resolve => setTimeout(resolve, 1000));"
+		],
+		"description": "genera un delay en base a promesas"
+	},
+	"await_promise_time_generated": {
+		"prefix": "await_promise_time_generated",
+		"body": [
+		  "await new Promise( resolve => setTimeout(resolve, 1000));"
+		],
+		"description": "genera un delay en base a promesas con prefijo de await"
+	},
+	"await_promise_time_generated_with_code": {
+		"prefix": "await_promise_time_generated_with_code",
+		"body": [
+		  "await new Promise( resolve => setTimeout(()=>{",
+		  " \t//...aqui codigo a ejecutar con retraso",
+		  " \treturn resolve(undefined);",
+		  "}, 1000));"
+		],
+		"description": "genera un delay en base a promesas con prefijo de await y con opcion de codigo"
+	},	
+	"ternary_assignment": {
+		"prefix": "ternary_assignment",
+		"body": [
+		  "$1 = ($2)? $3: $4;"
+		],
+		"description": "asignamiento ternario a una variable"
+	},	
+	"array_map_generic": {
+		"prefix": "array_map_generic",
+		"body": [
+			"let $2 = $1.map((item, idx, arr)=> {",
+			"\t//...aqui la modoficacion a cada elemento",
+			"\treturn;",
+			"});"
+		],
+		"description": "implementacion generica de un array.map"
+	},
+	//████Tipos y utilidades exclusivas typescript████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	"cast_any_cast": {
+		"prefix": "cast_any_cast",
 		"body": [
 			"let $1 = <$2><unknown>$3;"
 		],
-		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para extraer partes de un objeto)"
+		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para asignar un valor a un objeto en base a otro)"
 	},
+	"ts_type_record": {
+		"prefix": "ts_type_record",
+		"body": [
+			"$1: Record<keyof $1, $2>"
+		],
+		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para asignar un valor a un objeto en base a otro)"
+	},
+	//████Especializacion del codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	"export_type": {
+		"prefix": "export_type",
+		"body": [
+			"/**... */",
+			"export type $1 = $2;"
+		],
+		"description": "define un tipo y lo exporta"
+	},	
+	"export_type_T": {
+		"prefix": "export_type_T",
+		"body": [
+			"/**... */",
+			"export type $1<$2> = $3;"
+		],
+		"description": "define un tipo con generico y lo exporta"
+	},	
+	"export_type_refactor": {
+		"prefix": "export_type_refactor",
+		"body": [
+			"/**... */",
+			"export type Trf_$1 = $2<any>;"
+		],
+		"description": "define una refactorizacion de tipo (reemplazando el generico por `any` en el original)"
+	},	
+	"export_Interface": {
+		"prefix": "export_Interface",
+		"body": [
+			"/**... */",
+			"export interface $1 {",
+			"\t$2",
+			"}"
+		],
+		"description": "declara una interfaz y la exporta"
+	},
+	"export_Interface_Extends": {
+		"prefix": "export_Interface_Extends",
+		"body": [
+			"/**... */",
+			"export interface $1 extends $2 {",
+			"\t$3",
+			"}"
+		],
+		"description": "declara una interfaz con extension y la exporta"
+	},
+	"export_Interface_T": {
+		"prefix": "export_Interface_T",
+		"body": [
+			"/**... */",
+			"export interface $1<$2> {",
+			"\t$3",
+			"}"
+		],
+		"description": "declara una interfaz con T (tipado generico) y la exporta"
+	},
+	"export_Interface_Extends_T": {
+		"prefix": "export_Interface_Extends_T",
+		"body": [
+			"/**... */",
+			"export interface $1<$2> extends $3 {",
+			"\t$4",
+			"}"
+		],
+		"description": "declara una interfaz con extension, con T (tipado generico) y la exporta"
+	},
+	"export_Interface_T_Extends_T": {
+		"prefix": "export_Interface_T_Extends_T",
+		"body": [			
+			"/**... */",
+			"export interface $1<$2> extends $3<$4> {",
+			"\t$5",
+			"}"
+		],
+		"description": "declara una interfaz T (tipado generico) con extension con T (tipado generico) y la exporta"
+	},	
+	"export_Enum": {
+		"prefix": "export_Enum",
+		"body": [
+			"/**... */",
+			"export enum $1 {",
+			"\t$2",
+			"}"
+		],
+		"description": "declara una enumeracion y la exporta"
+	},
+	"export_var": {
+		"prefix": "export_var",
+		"body": [			
+			"/**... */",
+			"export var $1 = $2;",
+			""
+		],
+		"description": "declara un variable global y la exporta"
+	},
+	"export_Class": {
+		"prefix": "export_Class",
+		"body": [			
+			"/**... */",
+			"export class $1 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$2}",
+			"",
+			"}"
+		  ],
+		"description": "declara una clase y la exporta"
+	},
+	"export_Class_T": {
+		"prefix": "export_Class_T",
+		"body": [			
+			"/**... */",
+			"*/",
+			"export class $1<$2> {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$3}",
+			"",
+			"}"
+		  ],
+		"description": "declara una clase con T (tipado Generico) y la exporta"
+	},
+	"export_Class_Extends": {
+		"prefix": "export_Class_Extends",
+		"body": [			
+			"/**... */",
+			"export class $1 extends $2 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$3",
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase extendida o heredada y la exporta"
+	},
+	"export_Class_T_Extends": {
+		"prefix": "export_Class_T_Extends",
+		"body": [			
+			"/**... */",
+			"export class $1<$2> extends $3{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$4",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase  con T (tipado Generico), extendida o heredada y la exporta"
+	},
+	"export_Class_Extends_T": {
+		"prefix": "export_Class_Extends_T",
+		"body": [			
+			"/**... */",
+			"export class $1 extends $2<$3>{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$4",
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase extendida o heredada, con T (tipado Generico) y la exporta"
+	},	
+	"export_Class_Implements": {
+		"prefix": "export_Class_Implements",
+		"body": [			
+			"/**... */",
+			"export class $1 implements $2 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$3}",
+			"",
+			"}"
+		],
+		"description": "declara una clase que implementa interfaces y la exporta"
+	},
+	"export_Class_T_Implements": {
+		"prefix": "export_Class_T_Implements",
+		"body": [			
+			"/**... */",
+			"export class $1<$2> implements $3 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$4}",
+			"",
+			"}"
+		],
+		"description": "declara una clase con T (tipado Generico) que implementa interfaces y la exporta"
+	},
+	"export_Class_Implements_T": {
+		"prefix": "export_Class_Implements_T",
+		"body": [			
+			"/**... */",
+			"export class $1 implements $2<$3> {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$4}",
+			"",
+			"}"
+		],
+		"description": "declara una clase que implementa interfaces con T (tipado Generico) y la exporta"
+	},			
+	"export_Class_Extends_Implements": {
+		"prefix": "export_Class_Extends_Implements",
+		"body": [			
+			"/**... */",
+			"export class $1 extends $2 implements $3{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$4",
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase extendida o heredada y que tambien implementa interfaces; y la exporta"
+	},
+	"export_Class_T_Extends_Implements": {
+		"prefix": "export_Class_T_Extends_Implements",
+		"body": [			
+			"/**... */",
+			"export class $1<$2> extends $3 implements $4{",
+			"",
+            "\t/**... */",
+			"\tconstructor($5) {",
+			"\t\tsuper();",
+			"\t\t$5",
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase con T (Tipado generico),la extiende o hereda y que tambien implementa interfaces y la exporta"
+	},
+	"export_Class_T_Extends_T_Implements": {
+		"prefix": "export_Class_T_Extends_T_Implements",
+		"body": [			
+			"/**... */",
+			"export class $1<$2> extends $3<$4> implements $5{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$6",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase con T (Tipado generico),la extiende o hereda con T (tipado generico) y que tambien implementa interfaces y la exporta"
+	},	
+	"export_Class_T_Extends_Implements_T": {
+		"prefix": "export_Class_T_Extends_Implements_T",
+		"body": [			
+			"/**... */",
+			"export class $1<$2> extends $3 implements $4<$5>{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$6",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase con T (Tipado generico),la extiende o hereda y que tambien implementa interfaces con T (tipado generico) y la exporta"
+	},	
+	"export_Class_T_Extends_T_Implements_T": {
+		"prefix": "export_Class_T_Extends_T_Implements_T",
+		"body": [			
+			"/**... */",
+			"export class $1<$2> extends $3<$4> implements $5<$6>{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$7",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "declara una clase con T (Tipado generico),la extiende o hereda con T (tipado generico) y que tambien implementa interfaces con T (tipado generico) y la exporta"
+	},		
+	"export_abstract_Class": {
+		"prefix": "export_abstract_Class",
+		"body": [	
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$2}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta para exportar"
+	},	
+	"export_abstract_Class_T": {
+		"prefix": "export_abstract_Class_T",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2>{",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$3}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta con T (tipado Generico) para exportar"
+	},
+	"export_abstract_Class_Extends": {
+		"prefix": "export_abstract_Class_Extends",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1 extends $2 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$3",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta extendida para exportar"
+	},
+	"export_abstract_Class_T_Extends": {
+		"prefix": "export_abstract_Class_T_Extends",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> extends $3 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$4",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta con T (Tipado generico) extendida para exportar"
+	},	
+	"export_abstract_Class_Extends_T": {
+		"prefix": "export_abstract_Class_Extends_T",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1 extends $2<$3> {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t\t$4",			
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta extendida, con T (Tipado generico) para exportar"
+	},	
+	"export_abstract_Class_Implements": {
+		"prefix": "export_abstract_Class_Implements",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1 implements $2 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$3}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta que implementa interfaces para exportar"
+	},
+	"export_abstract_Class_T_Implements": {
+		"prefix": "export_abstract_Class_T_Implements",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> implements $3 {",
+			"",
+            "\t/**... */",
+			"\tconstructor() {$4}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta con T (Tipado generico) que implementa interfaces para exportar"
+	},
+	"export_abstract_Class_Implements_T": {
+		"prefix": "export_abstract_Class_Implements_T",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> implements $3<$4> {",
+			"",
+            "\t/**... */",
+			"\tconstructor($5) {}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta que implementa interfaces con T (Tipado generico) para exportar"
+	},	
+	"export_abstract_Class_Extends_Implements": {
+		"prefix": "export_abstract_Class_Extends_Implements",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1 extends $2 implements $3 {",
+			"",
+            "\t/**... */",
+            "\tconstructor() {",
+            "\t\tsuper();",
+            "\t\t$4",           
+            "\t}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta que implementa interfaces para exportar"
+	},
+	"export_abstract_Class_T_Extends_Implements": {
+		"prefix": "export_abstract_Class_T_Extends_Implements",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> extends $3 implements $4 {",
+			"",
+            "\t/**... */",
+            "\tconstructor() {",
+            "\t\tsuper();",
+            "\t\t$5",           
+            "\t}",
+			"}"
+		],
+		"description": "clase abstracta con T (Tipado generico) que implementa interfaces para exportar"
+	},
+	"export_abstract_Class_T_Extends_T_Implements": {
+		"prefix": "export_abstract_Class_T_Extends_T_Implements",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> extends $3<$4> implements $5 {",
+			"",
+            "\t/**... */",
+            "\tconstructor() {",
+            "\t\tsuper();",
+            "\t\t$6",           
+            "\t}",
+			"}"
+		],
+		"description": "clase abstracta con T (Tipado generico), que extiende o hereda con T (Tipado generico) y que implementa interfaces para exportar"
+	},	
+	"export_abstract_Class_T_Extends_Implements_T": {
+		"prefix": "export_abstract_Class_T_Extends_Implements_T",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> extends $3 implements $4<$5> {",
+			"",
+            "\t/**... */",
+            "\tconstructor() {",
+            "\t\tsuper();",
+            "\t\t$6",           
+            "\t}",
+			"",
+			"}"
+		],
+		"description": "clase abstracta con T (Tipado generico), que extiende o hereda  y que implementa interfaces con T (Tipado generico) para exportar"
+	},	
+	"export_abstract_Class_T_Extends_T_Implements_T": {
+		"prefix": "export_abstract_Class_T_Extends_T_Implements_T",
+		"body": [			
+			"/** *abstract*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export abstract class $1<$2> extends $3<$4> implements $5<$6> {",
+			"",
+            "\t/**... */",
+            "\tconstructor() {",
+            "\t\tsuper();",
+            "\t\t$7",           
+            "\t}",
+			"",
+			"}",
+			""
+		],
+		"description": "clase abstracta con T (Tipado generico), que extiende o hereda con T (Tipado generico) y que implementa interfaces con T (Tipado generico) para exportar"
+	},		
+	"public_method": {
+		"prefix": "public_method",
+		"body": [
+            "/**... */",
+			"public $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público estandar para typescript"
+	},
+	"public_method_Param": {
+		"prefix": "public_method_Param",
+		"body": [
+			"/**... */",
+			"public $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público estandar con parametros para typescript"
+	},
+	"public_static_method": {
+		"prefix": "public_static_method",
+		"body": [
+			"/**... */",
+			"public static $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público y estatico estandar para typescript"
+	},
+	"public_static_method_Param": {
+		"prefix": "public_static_method_Param",
+		"body": [
+			"/**... */",
+			"public static $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público y estatico estandar, con parametros, para typescript"
+	},
+	"public_abstract_method": {
+		"prefix": "public_abstract_method",
+		"body": [
+			"/**... */",
+			"public abstract $1(): $2;"
+		],
+		"description": "metodo abstracto publico, Recordar que debe declarar de una clase abstracta"
+	},
+	"public_abstract_method_Param": {
+		"prefix": "public_abstract_method_Param",
+		"body": [
+			"/**... */",
+			"public abstract $1($2): $3;"
+		],
+		"description": "metodo abstracto publico, Recordar que debe declarar de una clase abstracta"
+	},
+	"public_method_Override": {
+		"prefix": "public_method_Override",
+		"body": [
+			"/**... */",
+			"public override $1():$2{",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público sobreescrito para typescript"
+	},
+	"public_method_Param_Override": {
+		"prefix": "public_method_Param_Override",
+		"body": [
+			"/**... */",
+			"public override $1($2):$3{",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público sobreescrito con parametros para typescript"
+	},
+	"public_static_method_Override": {
+		"prefix": "public_static_method_Override",
+		"body": [
+			"/**... */",
+			"public override static $1():$2{",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público y estatico sobreescrito para typescript"
+	},
+	"public_static_method_Param_Override": {
+		"prefix": "public_static_method_Param_Override",
+		"body": [
+			"/**... */",
+			"public override static $1($2):$3{",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo público y estatico sobreescrito, con parametros, para typescript"
+	},
+	"private_method": {
+		"prefix": "private_method",
+		"body": [
+			"/**... */",
+			"private $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo privado estandar para typescript"
+	},
+	"private_method_Param": {
+		"prefix": "private_method_Param",
+		"body": [
+			"/**... */",
+			"private $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo privado estandar con parametros para typescript"
+	},
+	"private_static_method": {
+		"prefix": "private_static_method",
+		"body": [
+			"/**... */",
+			"private static $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo privado y estatico estandar para typescript"
+	},
+	"private_static_method_Param": {
+		"prefix": "private_static_method_Param",
+		"body": [
+			"/**... */",
+			"private static $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo privado y estatico estandar, con parametros, para typescript"
+	},
+	"protected_method": {
+		"prefix": "protected_method",
+		"body": [
+			"/**... */",
+			"protected $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "metodo protegido, para clase padre e hijas"
+	},
+	"protected_method_Param": {
+		"prefix": "protected_method_Param",
+		"body": [
+			"/**... */",
+			"protected $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo protegido estandar con parametros para typescript"
+	},
+	"protected_static_method": {
+		"prefix": "protected_static_method",
+		"body": [
+			"/**... */",
+			"protected static $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "metodo protegido estatico, para clase padre e hijas"
+	},
+	"protected_static_method_Param": {
+		"prefix": "protected_static_method_Param",
+		"body": [
+			"/**... */",
+			"protected static $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo protegido y estatico estandar, con parametros, para typescript"
+	},
+	"protected_abstract_method": {
+		"prefix": "protected_abstract_method",
+		"body": [
+			"/**... */",
+			"protected abstract $1(): $2;"
+		],
+		"description": "metodo protegido abstracto, para clase padre e hijas"
+	},
+	"protected_abstract_method_Param": {
+		"prefix": "protected_abstract_method_Param",
+		"body": [
+			"/**... */",
+			"protected abstract $1($2): $3;"
+		],
+		"description": "metodo abstracto protegido, Recordar que debe declarar de una clase abstracta"
+	},
+	"protected_method_Override": {
+		"prefix": "protected_method_Override",
+		"body": [
+			"/**... */",
+			"protected override $1():$2{",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo protegido sobreescrito para typescript"
+	},
+	"protected_method_Param_Override": {
+		"prefix": "protected_method_Param_Override",
+		"body": [
+			"/**... */",
+			"protected override $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo protegido sobreescrito con parametros para typescript"
+	},
+	"protected_static_method_Override": {
+		"prefix": "protected_static_method_Override",
+		"body": [
+			"/**... */",
+			"protected static override $1():$2{",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo protegido y estatico sobreescrito para typescript"
+	},
+	"protected_static_method_Param_Override": {
+		"prefix": "protected_static_method_Param_Override",
+		"body": [
+			"/**... */",
+			"protected static override $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "Metodo protegido y estatico sobreescrito, con parametros, para typescript"
+	},
+	"public_property": {
+		"prefix": "public_property",
+		"body": [
+			"/**... */",
+			"public $1: $2;"
+		],
+		"description": "Propiedad o atributo público de una clase"
+	},
+	"public_static_property": {
+		"prefix": "public_static_property",
+		"body": [
+			"/**... */",
+			"public static $1: $2;"
+		],
+		"description": "Propiedad o atributo público y estatico de una clase"
+	},
+	"public_abstract_property": {
+		"prefix": "public_abstract_property",
+		"body": [
+			"/**... */",
+			"public abstract $1: $2;"
+		],
+		"description": "Propiedad o atributo público y estatico de una clase"
+	},
+	"public_property_override": {
+		"prefix": "public_property_override",
+		"body": [
+			"/**... */",
+			"public override $1: $2;"
+		],
+		"description": "Propiedad o atributo público y sobreescrito de una clase"
+	},
+	"public_static_property_override": {
+		"prefix": "public_static_property_override",
+		"body": [
+			"/**... */",
+			"public static override $1: $2;"
+		],
+		"description": "Propiedad o atributo público y sobreescrito y estatico de una clase"
+	},
+	"public_get_virtual": {
+		"prefix": "public_get_virtual",
+		"body": [
+			"/**... */",
+			"public get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_set_virtual": {
+		"prefix": "public_set_virtual",
+		"body": [
+			"/**... */",
+			"public set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_set_and_get_virtual": {
+		"prefix": "public_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"public get $1(): ${3:Type} {",
+			"\tlet p: ${3:Type}; ",
+			"\tp = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"public set $1(v: ${3:Type}): void {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"private_property": {
+		"prefix": "private_property",
+		"body": [
+			"/**... */",
+			"private $1: $2;"
+		],
+		"description": "Propiedad o atributo privado de una clase"
+	},
+	"private_static_property": {
+		"prefix": "private_static_property",
+		"body": [
+			"/**... */",
+			"private static $1: $2;"
+		],
+		"description": "Propiedad o atributo privado y estatico de una clase"
+	},
+	"protected_property": {
+		"prefix": "protected_property",
+		"body": [
+			"/**... */",
+			"protected $1: $2;"
+		],
+		"description": "Propiedad o atributo protegido de una clase"
+	},
+	"protected_abstract_property": {
+		"prefix": "protected_abstract_property",
+		"body": [
+			"/**... */",
+			"protected abstract $1: $2;"
+		],
+		"description": "Propiedad o atributo protegido y estatico de una clase"
+	},
+	"protected_property_override": {
+		"prefix": "protected_property_override",
+		"body": [
+			"/**... */",
+			"protected override $1: $2;"
+		],
+		"description": "Propiedad o atributo protegido y sobreescrito de una clase"
+	},	
+	//████Especializacion Patrones POO████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  
+	"export_Class_singleton": {
+		"prefix": "export_Class_singleton",
+		"body": [			
+			"/** *Singleton*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export class $1 {",
+			"\t/**  Almacena la instancia única de esta clase */",
+			"\tprivate static $1_instance: $1;",
+			"\t/**... */",
+			"\tconstructor() {}",
+			"\t/** @returns la instancia unica de la clase*/",
+			"\tpublic static getInstance():$1{",
+			"\t\t$1.$1_instance = ($1.$1_instance == undefined || $1.$1_instance == null) ?",
+			"\t\t\tnew $1() : $1.$1_instance;",
+			"\t\treturn $1.$1_instance;",
+			"\t}",
+			"}"
+		],
+		"description": "Clase de Patron Singleton sencilla"
+	},
+	"export_Class_singleton_extends": {
+		"prefix": "export_Class_singleton_extends",
+		"body": [
+			"/** *Singleton*",
+			" * ",
+			" * ... ",
+			"*/",
+			"export class $1 extends $2{",
+			"",
+			"\t/**  Almacena la instancia única de esta clase */",
+			"\tprivate static $1_instance: $1;",
+			"\t/** ",
+			"\t * descrip...",
+			"\t * ",
+			"\t*/",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\t/** devuelve la instancia única de esta clase ",
+			"\t * ya sea que la crea o la que ya a sido creada",
+			"\t * ",
+			"\t*/",
+			"\tpublic static getInstance():$1{",
+			"\t\t$1.$1_instance = ($1.$1_instance == undefined || $1.$1_instance == null) ?",
+			"\t\t\tnew $1() : $1.$1_instance;",
+			"\t\treturn $1.$1_instance;",
+			"\t}",
+			"}"
+		],
+		"description": "Clase singleton extendida sencilla"
+	},	
+	"export_function_factory": {
+		"prefix": "export_function_factory",
+		"body": [
+			"/**... */",
+			"export function ${1:NameFnFactory}(keyInstance:$2): ${3:InterfaceBase} {",
+			"\tlet instance: ${3:InterfaceBase};",
+			"\tif ($4) instance = new ${5:Class}();",
+			"\telse if($6) instance = new ${7:Class}();",
+			"\telse throw new Error(`${keyInstance} does no valid key for factory`);",
+			"\treturn instance;",
+			"}"
+		],
+		"description": "factoria en funcion basica y exportable"
+	},
+	"export_Class_cursor": {
+		"prefix": "export_Class_cursor",
+		"body": [
+			"/**... */",
+			"export class ${1:ClassCursor} {",
+			"\t/**@returns valor predefinidos de `${2:Object}`*/",
+			"\tprivate static getDefault = () => {",
+			"\t\treturn {",
+			"\t\t\t//...aqui las propiedades de `${2:Object}`",
+			"\t\t};",
+			"\t};",
+			"\t/**`${2:Object}` actual*/",
+			"\tprivate _${2:Object}: ReturnType<(typeof ${1:ClassCursor})[\"getDefault\"]> = <any>(",
+			"\t\tundefined",
+			"\t);",
+			"\t/**estado del cursor */",
+			"\tprivate status: \"no_init\" | \"started\" | \"done\" = \"no_init\";",
+			"\t/**",
+			"\t * @param pCursor propiedades opcionales para",
+			"\t * personalizar la inicializacion del cursor",
+			"\t */",
+			"\tconstructor(p_${2:Object}?: Partial<${1:ClassCursor}[\"_${2:Object}\"]>) {",
+			"\t\tif (typeof this._${2:Object} != \"object\") this._${2:Object} = this.getDefault(); //⚠No llamar la estatica⚠",
+			"\t\tthis._${2:Object} = {",
+			"\t\t\t...this._${2:Object},",
+			"\t\t\t...(p_${2:Object} ?? {}),",
+			"\t\t};",
+			"\t}",
+			"\t/**@returns valor predefinidos del cursor*/",
+			"\tprivate getDefault() {",
+			"\t\treturn ${1:ClassCursor}.getDefault();",
+			"\t}",
+			"\t/**@returns el estado del cursor */",
+			"\tpublic getStatus(): ${1:ClassCursor}[\"status\"] {",
+			"\t\treturn this.status;",
+			"\t}",
+			"\t/**inicializar el cursor */",
+			"\tpublic start(): this {",
+			"\t\tthis.status = \"started\";",
+			"\t\treturn this;",
+			"\t}",
+			"\t/**@returns una instantanea del `${2:Object}`*/",
+			"\tpublic getSnapShot(): ${1:ClassCursor}[\"_${2:Object}\"] {",
+			"\t\tconst sS = { ...this._${2:Object} }; //⚠Clonacion sencilla⚠",
+			"\t\treturn sS;",
+			"\t}",
+			"\t/**@returns el `${2:Object}` y cierra el cursor*/",
+			"\tpublic done(): ${1:ClassCursor}[\"_${2:Object}\"] {",
+			"\t\tconst o = { ...this._${2:Object}}; //⚠Clonacion sencilla⚠",
+			"\t\tthis.status = \"done\";",
+			"\t\treturn o;",
+			"\t}",
+			"}"
+		],
+		"description": "clase base para cusrores (tambien conocida como patrón Builder)"
+	},	
+	"export_init_Class_with_config": {
+		"prefix": "export_init_Class_with_config",
+    "body": [
+      "/**... */",
+      "export abstract class ${1:NameInitClassWithConfig} {",
+      "\t/**@returns valor predefinidos de la configuración*/",
+      "\tprotected static getDefault = () => {",
+      "\t\treturn {",
+      "\t\t\t//⚠Evitar usar propiedades con subniveles⚠",
+      "\t\t\t//...aqui las propiedades de configuración",
+      "\t\t};",
+      "\t};",
+      "\t/**configuración actual*/",
+      "\tprotected _config: ReturnType<(typeof ${1:NameInitClassWithConfig})[\"getDefault\"]> =",
+      "\t\tundefined as any;",
+      "\t/**",
+      "\t * @param p_config propiedades opcionales para",
+      "\t * la inicializacion de la configuración",
+      "\t */",
+      "\tconstructor(p_config?: Partial<ReturnType<(typeof ${1:NameInitClassWithConfig})[\"getDefault\"]>>) {",
+      "\t\tif (typeof this._config != \"object\") this._config = this.getDefault(); //⚠No llamar la estatica⚠\"",
+      "\t\tthis._config = {",
+      "\t\t\t...this._config,",
+      "\t\t\t...(p_config ?? {}),",
+      "\t\t};",
+      "\t}",
+      "\t/**@returns valor predefinidos de la configuración */",
+      "\tprotected getDefault() {",
+      "\t\treturn ${1:NameInitClassWithConfig}.getDefault();",
+      "\t}",
+      "\t/**configuracion actual */",
+      "\tprotected get config() {",
+      "\t\tlet p: ReturnType<(typeof ${1:NameInitClassWithConfig})[\"getDefault\"]>;",
+      "\t\tp = this._config;",
+      "\t\treturn p;",
+      "\t}",
+      "}"
+    ],
+		"description": "clase abstracta con configuración en base a objeto estatico (esta clase es la inicial)"
+	},
+	"export_Class_with_config": {
+		"prefix": "export_Class_with_config",
+    "body": [
+      "/**... */",
+      "export class ${1:NameClassWithConfig} extends ${2:SuperClassWithConfig} {",
+      "\t/**@returns valor predefinidos de la configuración*/",
+      "\tprotected static getDefault = () => {",
+      "\t\tconst superDf = ${2:SuperClassWithConfig}.getDefault();",
+      "\t\treturn {",
+      "\t\t\t...superDf,",
+      "\t\t\t//⚠Evitar usar propiedades con subniveles⚠",
+      "\t\t\t//...aqui las propiedades de configuración",
+      "\t\t};",
+      "\t};",
+      "\t/**",
+      "\t * @param p_config propiedades opcionales para",
+      "\t * la inicializacion de la configuración",
+      "\t */",
+      "\tconstructor(p_config?: Partial<ReturnType<typeof ${1:NameClassWithConfig}[\"getDefault\"]>>) {",
+      "\t\tsuper(p_config);",
+      "\t}",
+      "\t/**@returns valor predefinidos de la configuración */",
+      "\tprotected override getDefault() {",
+      "\t\treturn ${1:NameClassWithConfig}.getDefault();",
+      "\t}",
+      "\t/**configuracion actual */",
+      "\tprotected override get config() {",
+      "\t\tlet p: ReturnType<typeof ${1:NameClassWithConfig}[\"getDefault\"]>;",
+      "\t\tp = <any>super.config;",
+      "\t\treturn p;",
+      "\t}",
+      "}"
+    ],
+		"description": "clase abstracta con configuración en base a objeto estatico (debe heredar de jerarquia de clase inicializadora)"
+	}	  
 }

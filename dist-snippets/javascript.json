@@ -16,321 +16,375 @@
 	//Genericos:
 	//▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 	//Bloques de comentarios y separadores:
-	"bqComentario-XS-style1": {
-		"prefix": "bqComentario-XS-style1",
+	"separador_XS_style1": {
+		"prefix": "bqSeparador_XS_style1",
 		"body": [
-			"//================================",
-			"//$1",
+			"//====${1/(.*)/${1:/upcase}/}===========================",
+			""
+		],
+		"description": "bloque de Separador sencillo con titulo de tamaño minusculo 32 caracteres + titulo, style ==="
+	},
+	"separador_S_style1": {
+		"prefix": "bqSeparador_S_style1",
+		"body": [
+			"//====${1/(.*)/${1:/upcase}/}============================================",
+			""
+		],
+		"description": "bloque de Separador sencillo con titulo de tamaño pequeño 48 caracteres + titulo, style ==="
+	},
+	"separador_M_style1": {
+		"prefix": "bqSeparador_M_style1",
+		"body": [
+			"//====${1/(.*)/${1:/upcase}/}============================================================",
+			""
+		],
+		"description": "bloque de Separador sencillo con titulo de tamaño mediano 64 caracteres + titulo, style ==="
+	},
+	"separador_L_style1": {
+		"prefix": "bqSeparador_L_style1",
+		"body": [
+			"//====${1/(.*)/${1:/upcase}/}============================================================================================================================",
+			""
+		],
+		"description": "bloque de Separador sencillo con titulo de tamanno grande 128 caracteres + título, style ==="
+	},
+	"separador_XS_style2": {
+		"prefix": "bqSeparador_XS_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño minusculo 32 caracteres + título, style ███"
+	},
+	"separador_S_style2": {
+		"prefix": "bqSeparador_S_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño pequenno 48 caracteres + título, style ███"
+	},
+	"separador_M_style2": {
+		"prefix": "bqSeparador_M_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████████████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño mediano 64 caracteres + título, style ███"
+	},
+	"separador_L_style2": {
+		"prefix": "bqSeparador_L_style2",
+		"body": [
+			"//████${1/(.*)/${1:/upcase}/}████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+			""
+		],
+		"description": "bloque de Separador sencillo con título de tamaño grande 128 caracteres + título, style ███"
+	},
+	"bqConstruccion_XS_style1": {
+		"prefix": "bqConstruccion_XS_style1",
+		"body": [
+			"/*--------------------------------*/",
+			"/*--------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -----*/",
 			"",
-			"//================================"
+			"/*---- <FIN CONSTRUCCION> --------*/",
+			"/*--------------------------------*/",
+			"/*--------------------------------*/"
 		],
-		"description": "bloque de comentario de tamaño minusculo 32 caracteres, style ==="
+		"description": "bloque de seccion en construccion de tamanno minusculo 32 caracteres, style ----"
 	},
-	"bqComentario-S-style1": {
-		"prefix": "bqComentario-S-style1",
+	"bqConstruccion_S_style1": {
+		"prefix": "bqConstruccion_S_style1",
 		"body": [
-			"//================================================",
-			"//$1",
+			"/*------------------------------------------------*/",
+			"/*------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> ---------------------*/",
 			"",
-			"//================================================"
+			"/*---- <FIN CONSTRUCCION> ------------------------*/",
+			"/*------------------------------------------------*/",
+			"/*------------------------------------------------*/"
 		],
-		"description": "bloque de comentario de tamanno pequenno 48 caracteres, style ==="
+		"description": "bloque de seccion en construccion de tamanno pequenno 48 caracteres, style ----"
 	},
-	"bqComentario-M-style1": {
-		"prefix": "bqComentario-M-style1",
+	"bqConstruccion_M_style1": {
+		"prefix": "bqConstruccion_M_style1",
 		"body": [
-			"//================================================================",
-			"//$1",
+			"/*----------------------------------------------------------------*/",
+			"/*----------------------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -------------------------------------*/",
 			"",
-			"//================================================================"
+			"/*---- <FIN CONSTRUCCION> ----------------------------------------*/",
+			"/*----------------------------------------------------------------*/",
+			"/*----------------------------------------------------------------*/"
 		],
-		"description": "bloque de comentario de tamanno mediano 64 caracteres, style ==="
+		"description": "bloque de seccion en construccion de tamanno mediano 64 caracteres, style ----"
 	},
-	"bqComentario-L-style1": {
-		"prefix": "bqComentario-L-style1",
+	"bqConstruccion_L_style1": {
+		"prefix": "bqConstruccion_L_style1",
 		"body": [
-			"//================================================================================================================================",
-			"//$1",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -----------------------------------------------------------------------------------------------------*/",
 			"",
-			"//================================================================================================================================"
+			"/*---- <FIN CONSTRUCCION> --------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/"
 		],
-		"description": "bloque de comentario de de tamanno grande 128 caracteres, style ==="
-	},
-	"separador-XS-style1": {
-		"prefix": "bqSeparador-XS-style1",
+		"description": "bloque de seccion en construccion de tamanno grande 128 caracteres, style ----"
+	},	
+	//███Codigo especializado████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████	  
+	"function_factory": {
+		"prefix": "function_factory",
 		"body": [
-			"//================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamaño minusculo 32 caracteres, style ==="
-	},
-	"separador-S-style1": {
-		"prefix": "bqSeparador-S-style1",
-		"body": [
-			"//================================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno pequenno 48 caracteres, style ==="
-	},
-	"separador-M-style1": {
-		"prefix": "bqSeparador-M-style1",
-		"body": [
-			"//================================================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno mediano 64 caracteres, style ==="
-	},
-	"separador-L-style1": {
-		"prefix": "bqSeparador-L-style1",
-		"body": [
-			"//================================================================================================================================",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno grande 128 caracteres, style ==="
-	},
-	"bqComentario-XS-style2": {
-		"prefix": "bqComentario-XS-style2",
-		"body": [
-			"//████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████"
-		],
-		"description": "bloque de comentario de tamaño minusculo 32 caracteres, style ███"
-	},
-	"bqComentario-S-style2": {
-		"prefix": "bqComentario-S-style2",
-		"body": [
-			"//████████████████████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████████████████████"
-		],
-		"description": "bloque de comentario de tamanno pequenno 48 caracteres, style ███"
-	},
-	"bqComentario-M-style2": {
-		"prefix": "bqComentario-M-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████████████████████████████████████"
-		],
-		"description": "bloque de comentario de tamanno mediano 64 caracteres, style ███"
-	},
-	"bqComentario-L-style2": {
-		"prefix": "bqComentario-L-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"//$1",
-			"",
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
-		],
-		"description": "bloque de comentario de de tamanno grande 128 caracteres, style ███"
-	},
-	"separador-XS-style2": {
-		"prefix": "bqSeparador-XS-style2",
-		"body": [
-			"//████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamaño minusculo 32 caracteres, style ███"
-	},
-	"separador-S-style2": {
-		"prefix": "bqSeparador-S-style2",
-		"body": [
-			"//████████████████████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno pequenno 48 caracteres, style ███"
-	},
-	"separador-M-style2": {
-		"prefix": "bqSeparador-M-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno mediano 64 caracteres, style ███"
-	},
-	"separador-L-style2": {
-		"prefix": "bqSeparador-L-style2",
-		"body": [
-			"//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
-			"$1"
-		],
-		"description": "bloque de Separador sencillo de tamanno grande 128 caracteres, style ███"
-	},
-	"bqConstruccion-XS-style1": {
-		"prefix": "bqConstruccion-XS-style1",
-		"body": [
-			"//_______ <EN CONSTRUCCION> ______",
-			"$1",
-			"//________________________________"
-		],
-		"description": "bloque de seccion en construccion de tamanno minusculo 32 caracteres, style ___"
-	},
-	"bqConstruccion-S-style1": {
-		"prefix": "bqConstruccion-S-style1",
-		"body": [
-			"//______________ <EN CONSTRUCCION> _______________",
-			"$1",
-			"//________________________________________________"
-		],
-		"description": "bloque de seccion en construccion de tamanno pequenno 48 caracteres, style ___"
-	},
-	"bqConstruccion-M-style1": {
-		"prefix": "bqConstruccion-M-style1",
-		"body": [
-			"//______________________ <EN CONSTRUCCION> _______________________",
-			"$1",
-			"//________________________________________________________________"
-		],
-		"description": "bloque de seccion en construccion de tamanno mediano 64 caracteres, style ___"
-	},
-	"bqTEST-XS-style1": {
-		"prefix": "bqTEST-XS-style1",
-		"body": [
-			"//­­­___ <TEST> _____________________",
-			"//New:",
-			"\n",
-			"//________________________________",
-			"//Old:",
-			"\n",
-			"//________________________________"
-		],
-		"description": "bloque de codigo en testeo de tamanno pequenno 32 caracteres, style ___"
-	},
-	"bqTEST-S-style1": {
-		"prefix": "bqTEST-S-style1",
-		"body": [
-			"//­­­___ <TEST> _____________________________________",
-			"//New:",
-			"\n",
-			"//________________________________________________",
-			"//Old:",
-			"\n",
-			"//________________________________________________"
-		],
-		"description": "bloque de codigo en testeo de tamanno pequenno 48 caracteres, style ___"
-	},
-	"bqTEST-M-style1": {
-		"prefix": "bqTEST-M-style1",
-		"body": [
-			"//­­­___ <TEST> _____________________________________________________",
-			"//New:",
-			"\n",
-			"//________________________________________________________________",
-			"//Old:",
-			"\n",
-			"//________________________________________________________________"
-		],
-		"description": "bloque de codigo en testeo de tamanno pequenno 64 caracteres, style ___"
-	},
-	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-	//funciones y atributos:
-	"function-js": {
-		"prefix": "function-js",
-		"body": [
-			"/*$1()*/",
-			"//",
-			"//Parametros:",
-			"//",
-			"function $1($2) {",
-			"    return;",
+			"/**... */",
+			"export function ${1:NameFnFactory}(keyInstance:$2): ${3:InterfaceBase} {",
+			"  let instance: ${3:InterfaceBase};",
+			"  if ($4) instance = new ${5:Class}();",
+			"  else if($6) instance = new ${7:Class}();",
+			"  else throw new Error(`${keyInstance} does no valid key for factory`);",
+			"  return instance;",
 			"}"
 		],
-		"description": "funcion basica con comentario para Javascript"
+		"description": "factoria en funcion basica y exportable"
+	},		
+	//███Utileria codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████	  
+	"const_destructure_obj": {
+		"prefix": "const_destructure_obj",
+		"body": [
+		  "const {} = $1;"
+		],
+		"description": "establece de destructuracion de un objeto almacenada en una constante"
 	},
-	//████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-	//utilitarias del lenguaje:	  
-	"arrow-fn-bq": {
-		"prefix": "arrow-fn-bq",
+	"function_basic": {
+		"prefix": "function_basic",
+		"body": [
+			"/**... */",
+			"function $1(): $2 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "funcion basica sin parametro"
+	},
+	"function_param_basic": {
+		"prefix": "function_param_basic",
+		"body": [
+			"/**... */",
+			"function $1($2): $3 {",
+			"\treturn;",
+			"}"
+		],
+		"description": "funcion basica con parametro"
+	},
+	"arrow_fn_bq": {
+		"prefix": "arrow_fn_bq",
 		"body": [
 			"($1) => {",
-			"    return;",
+			"\treturn;",
 			"}"
 		],
 		"description": "arrow function con bloque y retorno"
 	},
-	"arrow-fn-BasicError": {
-		"prefix": "arrow-fn-BasicError",
+	"arrow_fn_generic_error": {
+		"prefix": "arrow_fn_generic_error",
 		"body": [
-			"(error)=>{ console.log(error)}"
+			"(error)=>{ console.log(error) }"
 		],
-		"description": "arrow function con bloque de error basico"
+		"description": "arrow function con bloque de error genérico"
 	},
-	"ifArray-cast": {
-		"prefix": "ifArray-cast",
+	"array_cast": {
+		"prefix": "array_cast",
 		"body": [
 			"$1 = (Array.isArray($1)) ? $1 : [$1];"
 		],
 		"description": "determina si la variable es array y si no la transforma en array (recordar: se usa para una variable existente, si se quiere inicializar la variable se debe anteponer el   let  o  const  correspondiente)"
 	},
-	"ifArrayEmpty": {
-		"prefix": "ifArrayNotEmpty",
+	"if_oneline_with_return": {
+		"prefix": "if_oneline_with_return",
+		"body": [
+			"if ($1) return $2;"
+		],
+		"description": "sentecia `if` sin bloques y con retorno inmediato "
+	},	
+	"if_else_if_assignment": {
+		"prefix": "if_else_if_assignment",
+		"body": [
+			"let $1",
+			"if (${2:Condition}) $1 = ${3:value};",
+			"else if(${4:Condition}) $1 = ${5:value};",
+			"else $1 = ${6:value};"
+		  ],
+		"description": "cascada de `if` else if else para asignamiento por seleccion sin bloque"
+	},	
+	"if_else__if_bq": {
+		"prefix": "if_else__if_bq",
+		"body": [
+			"if ($1) {",
+			"\t",
+			"}else if($2){",
+			"\t",
+			"}else{",
+			"\t",
+			"}"
+		  ],
+		"description": "cascada de if else if else básico con logica encapsulada en bloque"
+	},	
+	"switch_bq": {
+		"prefix": "switch_bq",
+		"body": [
+			"switch($1){",
+			"  case \"$2\":{",
+			"",
+			"  } break;",
+			"  case \"$3\":{",
+			"",
+			"  } break;",
+			"  default:{",
+			"",
+			"  }break;",
+			"}"
+		  ],
+		"description": "switch case con bloques en cada caso"
+	},		
+	"if_undefined_or_null": {
+		"prefix": "if_undefined_or_null",
+		"body": [
+			"if ($1 == undefined || $1 == null) {",
+			"\t$2",
+			"}"
+		],
+		"description": "determina si la variable es `null` o `undefined`"
+	},
+	"if_object": {
+		"prefix": "if_object",
+		"body": [
+		  "if (typeof $1 == \"object\" && $1 != null) {",
+		  "\t$2",
+		  "}"
+		],
+		"description": "determina si es un tipo objeto (incluidos arrays)"
+	},	
+	"if_array_empty": {
+		"prefix": "if_array_empty",
 		"body": [
 			"if (Array.isArray($1) && $1.length == 0) {",
-			"    ",
+			"\t$2",
 			"}"
 		],
-		"description": "determina si es un array y si NO esta vacio"
+		"description": "determina si es un array y esta vacio"
 	},
-	"ifArrayNotEmpty": {
-		"prefix": "ifArrayNotEmpty",
+	"if_array_not_empty": {
+		"prefix": "if_array_not_empty",
 		"body": [
 			"if (Array.isArray($1) && $1.length > 0) {",
-			"    ",
+			"\t$2",
 			"}"
 		],
-		"description": "determina si es un array y si NO esta vacio"
-	},
-	"ifNotUndefinedAndNotNull": {
-		"prefix": "ifNotUndefinedAndNotNull",
+		"description": "determina si es un array y no esta vacio"
+	},	
+	"if_object_not_Array": {
+		"prefix": "if_object_not_Array",
 		"body": [
-			"if ($1 && $1 != null) {",
-			"    $2",
-			"}"
+		  "if (typeof $1 == \"object\" && $1 != null && !Array.isArray($1)) {",
+		  "\t$2",
+		  "}"
 		],
-		"description": "determina si la variable No es indefinida y No es null"
-	},
-	"ifNotUndefinedAndNotNullAndTypeof": {
-		"prefix": "ifNotUndefinedAndNotNullAndTypeof",
+		"description": "determina si es un tipo objeto (excluyendo el tipo array)"
+	},	
+	"if_float_number" : {
+		"prefix": "if_float_number",
 		"body": [
-			"if ($1 && $1 != null &&",
-			"    typeof($1) == \"$2\"",
-			") {",
-			"    ",
+			"const $1 = parseFloat($2);",
+			"if (typeof $1 == \"number\" && !isNaN($1)) {",
+			"\t$3",
 			"}"
-		],
-		"description": "determina si la variable No es indefinida y No es null y tiene un tipo primitivo"
+		  ],
+		"description": "determina si al hacer el cast es un numero flotante"
 	},
-	"ifUndefinedOrNull": {
-		"prefix": "ifUndefinedOrNull",
+	"if_float_number_cast": {
+		"prefix": "if_float_number_cast",
 		"body": [
-			"if (!$1 || $1 == null) {",
-			"    $2",
+		  "let $1 = (!isNaN(parseFloat($1))) ?",
+		  "\tparseFloat($1) : $2 ;"
+		],
+		"description": "intenta convertir cualquier valor a numero flotante o asignar un numero por defecto en `$2`; si no permite el tipado se debe usar otro nombre de variable en `let $1` "
+	},	
+	"if_object_with_properties": {
+		"prefix": "if_object_with_properties",
+		"body": [
+			"if (typeof $1 == \"object\" && $1 != null && Object.keys($1).length > 0) {",
+			"\t$2",
 			"}"
 		],
-		"description": "determina si la variable es indefinida o es null"
+		"description": "Determina si la variable es un objeto y tiene propiedades"
 	},
-	"newPromise": {
-		"prefix": "newPromise",
+	"if_object_with_properties_not_array": {
+		"prefix": "if_object_with_properties_not_array",
+		"body": [
+			"if (typeof $1 == \"object\" && $1 != null && !Array.isArray($1) && Object.keys($1).length > 0) {",
+			"\t$2",
+			"}"
+		],
+		"description": "Determina si la variable es un objeto (excluyendo el tipo array) y tiene propiedades"
+	},	
+	"new_promise": {
+		"prefix": "new_promise",
 		"body": [
 			"new Promise( (resolve, reject) => {",
-			"    //resolve();",
-			"    //reject();",
+			"\t//return resolve();",
+			"\t//return reject();",
 			"});"
 		],
 		"description": "crea una promesa vacia (se debe definir al menos el resolve() o reject())"
 	},
-	"while-Array-pop": {
-		"prefix": "while-Array-pop",
+	"while_array_pop": {
+		"prefix": "while_array_pop",
 		"body": [
-			"while($1.length > 0){",
-			"            ",
-			"    $1.pop();",
+			"while($1.length > 0) {",
+			"",
+			"\t$1.pop();",
 			"}"
 		],
-		"description": "cre un while con la opcion de ir eliminando elementos de un array desde el ultimo al primero"
+		"description": "crea un while con la opcion de ir eliminando elementos de un array desde el ultimo al primero"
 	},
+	"promise_time_generated": {
+		"prefix": "promise_time_generated",
+		"body": [
+		  "new Promise( resolve => setTimeout(resolve, 1000));"
+		],
+		"description": "genera un delay en base a promesas"
+	},
+	"await_promise_time_generated": {
+		"prefix": "await_promise_time_generated",
+		"body": [
+		  "await new Promise( resolve => setTimeout(resolve, 1000));"
+		],
+		"description": "genera un delay en base a promesas con prefijo de await"
+	},
+	"await_promise_time_generated_with_code": {
+		"prefix": "await_promise_time_generated_with_code",
+		"body": [
+		  "await new Promise( resolve => setTimeout(()=>{",
+		  " \t//...aqui codigo a ejecutar con retraso",
+		  " \treturn resolve(undefined);",
+		  "}, 1000));"
+		],
+		"description": "genera un delay en base a promesas con prefijo de await y con opcion de codigo"
+	},	
+	"ternary_assignment": {
+		"prefix": "ternary_assignment",
+		"body": [
+		  "$1 = ($2)? $3: $4;"
+		],
+		"description": "asignamiento ternario a una variable"
+	},	
+	"array_map_generic": {
+		"prefix": "array_map_generic",
+		"body": [
+			"let $2 = $1.map((item, idx, arr)=> {",
+			"\t//...aqui la modoficacion a cada elemento",
+			"\treturn;",
+			"});"
+		],
+		"description": "implementacion generica de un array.map"
+	}
 }
