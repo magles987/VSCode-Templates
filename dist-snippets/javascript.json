@@ -248,7 +248,7 @@
 	"if_undefined_or_null": {
 		"prefix": "if_undefined_or_null",
 		"body": [
-			"if ($1 == undefined || $1 == null) {",
+			"if ($1 === undefined || $1 === null) {",
 			"\t$2",
 			"}"
 		],
@@ -257,7 +257,7 @@
 	"if_object": {
 		"prefix": "if_object",
 		"body": [
-		  "if (typeof $1 == \"object\" && $1 != null) {",
+		  "if (typeof $1 === \"object\" && $1 !== null) {",
 		  "\t$2",
 		  "}"
 		],
@@ -266,7 +266,7 @@
 	"if_array_empty": {
 		"prefix": "if_array_empty",
 		"body": [
-			"if (Array.isArray($1) && $1.length == 0) {",
+			"if (Array.isArray($1) && $1.length === 0) {",
 			"\t$2",
 			"}"
 		],
@@ -284,7 +284,7 @@
 	"if_object_not_Array": {
 		"prefix": "if_object_not_Array",
 		"body": [
-		  "if (typeof $1 == \"object\" && $1 != null && !Array.isArray($1)) {",
+		  "if (typeof $1 === \"object\" && $1 !== null && !Array.isArray($1)) {",
 		  "\t$2",
 		  "}"
 		],
@@ -294,7 +294,7 @@
 		"prefix": "if_float_number",
 		"body": [
 			"const $1 = parseFloat($2);",
-			"if (typeof $1 == \"number\" && !isNaN($1)) {",
+			"if (typeof $1 === \"number\" && !isNaN($1)) {",
 			"\t$3",
 			"}"
 		  ],
@@ -311,7 +311,7 @@
 	"if_object_with_properties": {
 		"prefix": "if_object_with_properties",
 		"body": [
-			"if (typeof $1 == \"object\" && $1 != null && Object.keys($1).length > 0) {",
+			"if (typeof $1 === \"object\" && $1 !== null && Object.keys($1).length > 0) {",
 			"\t$2",
 			"}"
 		],
@@ -320,7 +320,7 @@
 	"if_object_with_properties_not_array": {
 		"prefix": "if_object_with_properties_not_array",
 		"body": [
-			"if (typeof $1 == \"object\" && $1 != null && !Array.isArray($1) && Object.keys($1).length > 0) {",
+			"if (typeof $1 === \"object\" && $1 !== null && !Array.isArray($1) && Object.keys($1).length > 0) {",
 			"\t$2",
 			"}"
 		],
