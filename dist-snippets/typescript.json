@@ -424,7 +424,7 @@
 			"/*----------------------------------------------------------------*/",
 			"/*----------------------------------------------------------------*/"
 		],
-		"description": "bloque de seccion en construccion de tamanno mediano 64 caracteres, style ----"
+		"description": "bloque de seccion en construccion de tamaño mediano 64 caracteres, style ----"
 	},
 	"bqConstruccion_L_style1": {
 		"prefix": "bqConstruccion_L_style1",
@@ -439,6 +439,78 @@
 		],
 		"description": "bloque de seccion en construccion de tamanno grande 128 caracteres, style ----"
 	},	
+	"bqConstruccionWithPreCode_XS_style1": {
+		"prefix": "bqConstruccionWithPreCode_XS_style1",
+		"body": [
+			"/*--------------------------------*/",
+			"/*--------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -----*/",
+			"/*",
+			"",
+			"$TM_SELECTED_TEXT",
+			"",
+			"*/",
+			"$1",
+			"/*---- <FIN CONSTRUCCION> --------*/",
+			"/*--------------------------------*/",
+			"/*--------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamaño minusculo 32 caracteres, con codigo anterior comentado, style ----"
+	},	
+	"bqConstruccionWithPreCode_S_style1": {
+		"prefix": "bqConstruccionWithPreCode_S_style1",
+		"body": [
+			"/*------------------------------------------------*/",
+			"/*------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> ---------------------*/",
+			"/*",
+			"",
+			"$TM_SELECTED_TEXT",
+			"",
+			"*/",
+			"$1",
+			"/*---- <FIN CONSTRUCCION> ------------------------*/",
+			"/*------------------------------------------------*/",
+			"/*------------------------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamaño pequeño 48 caracteres, con codigo anterior comentado, style ----"
+	},		
+	"bqConstruccionWithPreCode_M_style1": {
+		"prefix": "bqConstruccionWithPreCode_M_style1",
+		"body": [
+			"/*----------------------------------------------------------------*/",
+			"/*----------------------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -------------------------------------*/",
+			"/*",
+			"",
+			"$TM_SELECTED_TEXT",
+			"",
+			"*/",
+			"$1",
+			"/*---- <FIN CONSTRUCCION> ----------------------------------------*/",
+			"/*----------------------------------------------------------------*/",
+			"/*----------------------------------------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamaño mediano 64 caracteres, con codigo anterior comentado, style ----"
+	},	
+	"bqConstruccionWithPreCode_L_style1": {
+		"prefix": "bqConstruccionWithPreCode_L_style1",
+		"body": [
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*---- <INICIO CONSTRUCCION> -----------------------------------------------------------------------------------------------------*/",
+			"/*",
+			"",
+			"$TM_SELECTED_TEXT",
+			"",
+			"*/",
+			"$1",
+			"/*---- <FIN CONSTRUCCION> --------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
+			"/*--------------------------------------------------------------------------------------------------------------------------------*/"
+		],
+		"description": "bloque de seccion en construccion de tamaño grande 128 caracteres, con codigo anterior comentado, style ----"
+	},			
 	//███Utileria codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 	"const_destructure_obj": {
 		"prefix": "const_destructure_obj",
@@ -678,7 +750,7 @@
 			"});"
 		],
 		"description": "implementacion generica de un array.map"
-	},
+	},	
 	//████Tipos y utilidades exclusivas typescript████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 	"cast_any_cast": {
 		"prefix": "cast_any_cast",
@@ -2035,5 +2107,5 @@
       "}"
     ],
 		"description": "clase abstracta con configuración en base a objeto estatico (debe heredar de jerarquia de clase inicializadora)"
-	}	  
+	}  
 }
