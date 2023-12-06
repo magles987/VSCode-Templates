@@ -446,9 +446,7 @@
 			"/*--------------------------------*/",
 			"/*---- <INICIO CONSTRUCCION> -----*/",
 			"/*",
-			"",
 			"$TM_SELECTED_TEXT",
-			"",
 			"*/",
 			"$1",
 			"/*---- <FIN CONSTRUCCION> --------*/",
@@ -464,9 +462,7 @@
 			"/*------------------------------------------------*/",
 			"/*---- <INICIO CONSTRUCCION> ---------------------*/",
 			"/*",
-			"",
 			"$TM_SELECTED_TEXT",
-			"",
 			"*/",
 			"$1",
 			"/*---- <FIN CONSTRUCCION> ------------------------*/",
@@ -482,9 +478,7 @@
 			"/*----------------------------------------------------------------*/",
 			"/*---- <INICIO CONSTRUCCION> -------------------------------------*/",
 			"/*",
-			"",
 			"$TM_SELECTED_TEXT",
-			"",
 			"*/",
 			"$1",
 			"/*---- <FIN CONSTRUCCION> ----------------------------------------*/",
@@ -500,9 +494,7 @@
 			"/*--------------------------------------------------------------------------------------------------------------------------------*/",
 			"/*---- <INICIO CONSTRUCCION> -----------------------------------------------------------------------------------------------------*/",
 			"/*",
-			"",
 			"$TM_SELECTED_TEXT",
-			"",
 			"*/",
 			"$1",
 			"/*---- <FIN CONSTRUCCION> --------------------------------------------------------------------------------------------------------*/",
@@ -510,7 +502,7 @@
 			"/*--------------------------------------------------------------------------------------------------------------------------------*/"
 		],
 		"description": "bloque de seccion en construccion de tamaño grande 128 caracteres, con codigo anterior comentado, style ----"
-	},			
+	},		
 	//███Utileria codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 	"const_destructure_obj": {
 		"prefix": "const_destructure_obj",
@@ -657,7 +649,7 @@
 	"if_float_number" : {
 		"prefix": "if_float_number",
 		"body": [
-			"const $1 = parseFloat(<string><unknown>$2);",
+			"const $1 = parseFloat((($2) as unknown) as string);",
 			"if (typeof $1 === \"number\" && !isNaN($1)) {",
 			"\t$3",
 			"}"
@@ -667,8 +659,8 @@
 	"if_float_number_cast": {
 		"prefix": "if_float_number_cast",
 		"body": [
-		  "let $1 = (!isNaN(parseFloat(<string><unknown>$1))) ?",
-		  "\tparseFloat(<string><unknown>$1) : $2 ;"
+		  "let $1 = (!isNaN(parseFloat((($1) as unknown) as string))) ?",
+		  "\tparseFloat((($1) as unknown) as string) : $2 ;"
 		],
 		"description": "intenta convertir cualquier valor a numero flotante o asignar un numero por defecto en `$2`; si no permite el tipado se debe usar otro nombre de variable en `let $1` "
 	},	
@@ -755,7 +747,7 @@
 	"cast_any_cast": {
 		"prefix": "cast_any_cast",
 		"body": [
-			"let $1 = <$2><unknown>$3;"
+			"let $1 = (($3) as unknown) as $2;"
 		],
 		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para asignar un valor a un objeto en base a otro)"
 	},
