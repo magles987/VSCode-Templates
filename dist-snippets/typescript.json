@@ -795,8 +795,8 @@
 		],
 		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para asignar un valor a un objeto en base a otro)"
 	},
-	"ts_type_record": {
-		"prefix": "ts_type_record",
+	"ts_keyof_record": {
+		"prefix": "ts_keyof_record",
 		"body": [
 			"$1: Record<keyof $1, $2>"
 		],
@@ -822,7 +822,7 @@
 	"export_type_refactor": {
 		"prefix": "export_type_refactor",
 		"body": [
-			"/**... */",
+			"/**refactorización de ...*/",
 			"export type Trf_$1 = $2<any>;"
 		],
 		"description": "define una refactorizacion de tipo (reemplazando el generico por `any` en el original)"
@@ -1380,7 +1380,6 @@
 	"public_override_method": {
 		"prefix": "public_override_method",
 		"body": [
-			"/**... */",
 			"public override $1():$2{",
 			"\treturn;",
 			"}"
@@ -1390,7 +1389,6 @@
 	"public_override_method_param": {
 		"prefix": "public_override_method_param",
 		"body": [
-			"/**... */",
 			"public override $1($2):$3{",
 			"\treturn;",
 			"}"
@@ -1400,7 +1398,6 @@
 	"public_static_override_method": {
 		"prefix": "public_static_override_method",
 		"body": [
-			"/**... */",
 			"public override static $1():$2{",
 			"\treturn;",
 			"}"
@@ -1410,7 +1407,6 @@
 	"public_static_override_method_param": {
 		"prefix": "public_static_override_method_param",
 		"body": [
-			"/**... */",
 			"public override static $1($2):$3{",
 			"\treturn;",
 			"}"
@@ -1430,7 +1426,6 @@
 	"public_override_async_method": {
 		"prefix": "public_override_async_method",
 		"body": [
-			"\t/**... */",
 			"\tpublic override async $1(): Promise<$2> {",
 			"\t\treturn;",
 			"\t}"
@@ -1450,7 +1445,6 @@
 	"public_static_override_async_method": {
 		"prefix": "public_static_override_async_method",
 		"body": [
-			"\t/**... */",
 			"\tpublic static override async $1(): Promise<$2> {",
 			"\t\treturn;",
 			"\t}"
@@ -1576,7 +1570,6 @@
 	"protected_override_method": {
 		"prefix": "protected_override_method",
 		"body": [
-			"/**... */",
 			"protected override $1(): $2 {",
 			"\treturn;",
 			"}"
@@ -1586,7 +1579,6 @@
 	"protected_override_method_param": {
 		"prefix": "protected_override_method_param",
 		"body": [
-			"/**... */",
 			"protected override $1($2): $3 {",
 			"\treturn;",
 			"}"
@@ -1596,7 +1588,6 @@
 	"protected_static_override_method": {
 		"prefix": "protected_static_override_method",
 		"body": [
-			"/**... */",
 			"protected static override $1(): $2 {",
 			"\treturn;",
 			"}"
@@ -1606,7 +1597,6 @@
 	"protected_static_override_method_param": {
 		"prefix": "protected_static_override_method_param",
 		"body": [
-			"/**... */",
 			"protected static override $1($2): $3 {",
 			"\treturn;",
 			"}"
@@ -1626,7 +1616,6 @@
 	"protected_override_async_method": {
 		"prefix": "protected_override_async_method",
 		"body": [
-			"\t/**... */",
 			"\tprotected override async $1(): Promise<$2> {",
 			"\t\treturn;",
 			"\t}"
@@ -1646,7 +1635,6 @@
 	"protected_static_override_async_method": {
 		"prefix": "protected_override_async_method",
 		"body": [
-			"\t/**... */",
 			"\tprotected static override async $1(): Promise<$2> {",
 			"\t\treturn;",
 			"\t}"
@@ -1680,7 +1668,6 @@
 	"public_override_property": {
 		"prefix": "public_override_property",
 		"body": [
-			"/**... */",
 			"public override $1: $2;"
 		],
 		"description": "Propiedad o atributo público y sobreescrito de una clase"
@@ -1688,7 +1675,6 @@
 	"public_static_override_property": {
 		"prefix": "public_static_override_property",
 		"body": [
-			"/**... */",
 			"public static override $1: $2;"
 		],
 		"description": "Propiedad o atributo público y sobreescrito y estatico de una clase"
@@ -1736,7 +1722,6 @@
 	"public_override_get_virtual": {
 		"prefix": "public_override_get_virtual",
 		"body": [
-			"/**... */",
 			"public override get $1(): ${3:Type} {",
 			"\tlet p: ${3:Type}; ",
 			"\tp = this.$2;",
@@ -1748,7 +1733,6 @@
 	"public_override_set_virtual": {
 		"prefix": "public_override_set_virtual",
 		"body": [
-			"/**... */",
 			"public override set $1(v: ${3:Type}): void {",
 			"\tthis.$2 = v;",
 			"\treturn;",
@@ -1759,13 +1743,11 @@
 	"public_override_set_and_get_virtual": {
 		"prefix": "public_override_set_and_get_virtual",
 		"body": [
-			"/**... */",
 			"public override get $1(): ${3:Type} {",
 			"\tlet p: ${3:Type}; ",
 			"\tp = this.$2;",
 			"\treturn p;",
 			"}",
-			"/**... */",
 			"public override set $1(v: ${3:Type}): void {",
 			"\tthis.$2 = v;",
 			"\treturn;",
@@ -1834,7 +1816,6 @@
 	"protected_override_property": {
 		"prefix": "protected_override_property",
 		"body": [
-			"/**... */",
 			"protected override $1: $2;"
 		],
 		"description": "Propiedad o atributo protegido y sobreescrito de una clase"
@@ -1882,7 +1863,6 @@
 	"protected_override_get_virtual": {
 		"prefix": "protected_override_get_virtual",
 		"body": [
-			"/**... */",
 			"protected override get $1(): ${3:Type} {",
 			"\tlet p: ${3:Type}; ",
 			"\tp = this.$2;",
@@ -1894,7 +1874,6 @@
 	"protected_override_set_virtual": {
 		"prefix": "protected_override_set_virtual",
 		"body": [
-			"/**... */",
 			"protected override set $1(v: ${3:Type}): void {",
 			"\tthis.$2 = v;",
 			"\treturn;",
@@ -1905,13 +1884,11 @@
 	"protected_override_set_and_get_virtual": {
 		"prefix": "protected_override_set_and_get_virtual",
 		"body": [
-			"/**... */",
 			"protected override get $1(): ${3:Type} {",
 			"\tlet p: ${3:Type}; ",
 			"\tp = this.$2;",
 			"\treturn p;",
 			"}",
-			"/**... */",
 			"protected override set $1(v: ${3:Type}): void {",
 			"\tthis.$2 = v;",
 			"\treturn;",
@@ -2025,9 +2002,7 @@
 			"\t\t};",
 			"\t};",
 			"\t/**`${2:Object}` actual*/",
-			"\tprivate _${2:Object}: ReturnType<(typeof ${1:ClassCursor})[\"getDefault\"]> = <any>(",
-			"\t\tundefined",
-			"\t);",
+			"\tprivate _${2:Object}: ReturnType<(typeof ${1:ClassCursor})[\"getDefault\"]>;",
 			"\t/**estado del cursor */",
 			"\tprivate status: \"no_init\" | \"started\" | \"done\" = \"no_init\";",
 			"\t/**",
@@ -2069,79 +2044,304 @@
 		],
 		"description": "clase base para cusrores (tambien conocida como patrón Builder)"
 	},	
-	"export_init_Class_with_config": {
-		"prefix": "export_init_Class_with_config",
-    "body": [
-      "/**... */",
-      "export abstract class ${1:NameInitClassWithConfig} {",
-      "\t/**@returns valor predefinidos de la configuración*/",
-      "\tprotected static getDefault = () => {",
-      "\t\treturn {",
-      "\t\t\t//⚠Evitar usar propiedades con subniveles⚠",
-      "\t\t\t//...aqui las propiedades de configuración",
-      "\t\t};",
-      "\t};",
-      "\t/**configuración actual*/",
-      "\tprotected _config: ReturnType<(typeof ${1:NameInitClassWithConfig})[\"getDefault\"]> =",
-      "\t\tundefined as any;",
-      "\t/**",
-      "\t * @param p_config propiedades opcionales para",
-      "\t * la inicializacion de la configuración",
-      "\t */",
-      "\tconstructor(p_config?: Partial<ReturnType<(typeof ${1:NameInitClassWithConfig})[\"getDefault\"]>>) {",
-      "\t\tif (typeof this._config !== \"object\") this._config = this.getDefault(); //⚠No llamar la estatica⚠\"",
-      "\t\tthis._config = {",
-      "\t\t\t...this._config,",
-      "\t\t\t...(p_config ?? {}),",
-      "\t\t};",
-      "\t}",
-      "\t/**@returns valor predefinidos de la configuración */",
-      "\tprotected getDefault() {",
-      "\t\treturn ${1:NameInitClassWithConfig}.getDefault();",
-      "\t}",
-      "\t/**configuracion actual */",
-      "\tprotected get config() {",
-      "\t\tlet p: ReturnType<(typeof ${1:NameInitClassWithConfig})[\"getDefault\"]>;",
-      "\t\tp = this._config;",
-      "\t\treturn p;",
-      "\t}",
-      "}"
-    ],
-		"description": "clase abstracta con configuración en base a objeto estatico (esta clase es la inicial)"
+	"export_selfconstructor_Class": {
+	"prefix": "export_selfconstructor_Class",
+	"body": [
+		"/** *selfconstructor*",
+		" *",
+		" * ...",
+		" */",
+		"export class $1 implements ReturnType<$1[\"getDefault\"]> {",
+		"\t/**@returns todos los campos con sus valores predefinidos para instancias de esta clase*/",
+		"\tpublic static readonly getDefault = () => {",
+		"\t\treturn {",
+		"\t\t\t//...aqui las propiedades",
+		"\t\t\t// exampleField: \"hello\", //tipo string dedicudo",
+		"\t\t};",
+		"\t};",
+		"\t/**@returns todas las constantes a usar en instancias de esta clase*/",
+		"\tprotected static readonly getCONSTANTS = () => {",
+		"\t\treturn {",
+		"\t\t\t//..aqui las constantes",
+		"\t\t};",
+		"\t};",
+		"\t// private _exampleField: string;",
+		"\t// public get exampleField(): string {",
+		"\t//   return this._exampleField;",
+		"\t// }",
+		"\t// protected set exampleField(v: unknown) {",
+		"\t//   this._exampleField=",
+		"\t//     typeof v === \"string\"",
+		"\t//       ? v",
+		"\t//       : this._exampleField !== undefined",
+		"\t//       ? this._exampleField",
+		"\t//       : this.getDefault().exampleField;",
+		"\t// }",
+		"\t/**",
+		"\t * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+		"\t * @param [isInit=true] ❕Solo para herencia❕, indica si esta clase debe iniciar las propiedaes",
+		"\t */",
+		"\tconstructor(base: Partial<ReturnType<$1[\"getDefault\"]>>, isInit = true) {",
+		"\t\tif (isInit) this.initProps(base);",
+		"\t}",
+		"\t/**@returns todos los campos con sus valores predefinidos*/",
+		"\tprotected getDefault() {",
+		"\t\treturn $1.getDefault();",
+		"\t}",
+		"\t/**inicializa las propiedades de manera dinamica",
+		"\t *",
+		"\t * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+		"\t */",
+		"\tprotected initProps(base: Partial<ReturnType<$1[\"getDefault\"]>>): void {",
+		"\t\tfor (const key in this.getDefault()) {",
+		"\t\t\tthis[key] = base[key];",
+		"\t\t}",
+		"\t\treturn;",
+		"\t}",
+		"\t/**⚠ Reinicia todas las propiedades al valor predefinido ⚠ */",
+		"\tpublic resetProps(): void {",
+		"\t\tconst df = this.getDefault();",
+		"\t\tfor (const key in df) {",
+		"\t\t\tthis[key] = df[key];",
+		"\t\t}",
+		"\t\treturn;",
+		"\t}",
+		"\t/**reinicia una propiedad al valor predefinido",
+		"\t *",
+		"\t * @param key clave identificadora de la propiedad a reiniciar",
+		"\t */",
+		"\tpublic resetPropByKey(key: keyof ReturnType<$1[\"getDefault\"]>): void {",
+		"\t\tconst df = this.getDefault();",
+		"\t\tthis[key] = df[key];",
+		"\t\treturn;",
+		"\t}",
+		"}"
+	],
+	"description": "clase con autoconstructor que a partir de propiedades predefinidas permite 3 opciones de personalización para sus propiedades"
 	},
-	"export_Class_with_config": {
-		"prefix": "export_Class_with_config",
-    "body": [
-      "/**... */",
-      "export class ${1:NameClassWithConfig} extends ${2:SuperClassWithConfig} {",
-      "\t/**@returns valor predefinidos de la configuración*/",
-      "\tprotected static getDefault = () => {",
-      "\t\tconst superDf = ${2:SuperClassWithConfig}.getDefault();",
-      "\t\treturn {",
-      "\t\t\t...superDf,",
-      "\t\t\t//⚠Evitar usar propiedades con subniveles⚠",
-      "\t\t\t//...aqui las propiedades de configuración",
-      "\t\t};",
-      "\t};",
-      "\t/**",
-      "\t * @param p_config propiedades opcionales para",
-      "\t * la inicializacion de la configuración",
-      "\t */",
-      "\tconstructor(p_config?: Partial<ReturnType<typeof ${1:NameClassWithConfig}[\"getDefault\"]>>) {",
-      "\t\tsuper(p_config);",
-      "\t}",
-      "\t/**@returns valor predefinidos de la configuración */",
-      "\tprotected override getDefault() {",
-      "\t\treturn ${1:NameClassWithConfig}.getDefault();",
-      "\t}",
-      "\t/**configuracion actual */",
-      "\tprotected override get config() {",
-      "\t\tlet p: ReturnType<typeof ${1:NameClassWithConfig}[\"getDefault\"]>;",
-      "\t\tp = <any>super.config;",
-      "\t\treturn p;",
-      "\t}",
-      "}"
-    ],
-		"description": "clase abstracta con configuración en base a objeto estatico (debe heredar de jerarquia de clase inicializadora)"
-	}  
+	"export_selfconstructor_abstract_Class": {
+		"prefix": "export_selfconstructor_abstract_Class",
+		"body": [
+			"/** *selfconstructor*",
+			" *",
+			" * ...",
+			" */",
+			"export abstract class $1 implements ReturnType<$1[\"getDefault\"]> {",
+			"\t/**@returns todos los campos con sus valores predefinidos para instancias de esta clase*/",
+			"\tpublic static readonly getDefault = () => {",
+			"\t\treturn {",
+			"\t\t\t//...aqui las propiedades",
+			"\t\t\t// exampleField: \"hello\", //tipo string dedicudo",
+			"\t\t};",
+			"\t};",
+			"\t/**@returns todas las constantes a usar en instancias de esta clase*/",
+			"\tprotected static readonly getCONSTANTS = () => {",
+			"\t\treturn {",
+			"\t\t\t//..aqui las constantes",
+			"\t\t};",
+			"\t};",
+			"\t// private _exampleField: string;",
+			"\t// public get exampleField(): string {",
+			"\t//   return this._exampleField;",
+			"\t// }",
+			"\t// protected set exampleField(v: unknown) {",
+			"\t//   this._exampleField=",
+			"\t//     typeof v === \"string\"",
+			"\t//       ? v",
+			"\t//       : this._exampleField !== undefined",
+			"\t//       ? this._exampleField",
+			"\t//       : this.getDefault().exampleField;",
+			"\t// }",
+			"\t/**",
+			"\t * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+			"\t * @param [isInit=true] ❕Solo para herencia❕, indica si esta clase debe iniciar las propiedaes",
+			"\t */",
+			"\tconstructor(base: Partial<ReturnType<$1[\"getDefault\"]>>, isInit = true) {",
+			"\t\tif (isInit) this.initProps(base);",
+			"\t}",
+			"\t/**@returns todos los campos con sus valores predefinidos*/",
+			"\tprotected getDefault() {",
+			"\t\treturn $1.getDefault();",
+			"\t}",
+			"\t/**inicializa las propiedades de manera dinamica",
+			"\t *",
+			"\t * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+			"\t */",
+			"\tprotected initProps(base: Partial<ReturnType<$1[\"getDefault\"]>>): void {",
+			"\t\tfor (const key in this.getDefault()) {",
+			"\t\t\tthis[key] = base[key];",
+			"\t\t}",
+			"\t\treturn;",
+			"\t}",
+			"\t/**⚠ Reinicia todas las propiedades al valor predefinido ⚠ */",
+			"\tpublic resetProps(): void {",
+			"\t\tconst df = this.getDefault();",
+			"\t\tfor (const key in df) {",
+			"\t\t\tthis[key] = df[key];",
+			"\t\t}",
+			"\t\treturn;",
+			"\t}",
+			"\t/**reinicia una propiedad al valor predefinido",
+			"\t *",
+			"\t * @param key clave identificadora de la propiedad a reiniciar",
+			"\t */",
+			"\tpublic resetPropByKey(key: keyof ReturnType<$1[\"getDefault\"]>): void {",
+			"\t\tconst df = this.getDefault();",
+			"\t\tthis[key] = df[key];",
+			"\t\treturn;",
+			"\t}",
+			"}"
+		],
+		"description": "clase abstracta con autoconstructor que a partir de propiedades predefinidas permite 3 opciones de personalización para sus propiedades"
+	},	
+	"export_selfconstructor_Class_extends": {
+	"prefix": "export_selfconstructor_Class_extends",
+	"body": [
+		"/** *selfcontructor*",
+		" *",
+		" * ...",
+		" */",
+		"export class $1 extends $2 implements ReturnType<$1[\"getDefault\"]> {",
+		"\t/**@returns todos los campos con sus valores predefinidos para instancias de esta clase*/",
+		"\tpublic static readonly getDefault = () => {",
+		"\t\tconst superDf = $2.getDefault();",
+		"\t\treturn {",
+		"\t\t\t...superDf,",
+		"\t\t\t//...aqui las propiedades",
+		"\t\t\t// exampleField: \"hello\", //tipo string dedicudo",
+		"\t\t};",
+		"\t};",
+		"\t/**@returns todas las constantes a usar en instancias de esta clase*/",
+		"\tprotected static readonly getCONSTANTS = () => {",
+		"\t\tconst superCONST = $2.getCONSTANTS();",
+		"\t\treturn {",
+		"\t\t\t...superCONST,",
+		"\t\t\t//..aqui las constantes",
+		"\t\t};",
+		"\t};",
+		"\t// private _exampleField: string;",
+		"\t// public get exampleField(): string {",
+		"\t//   return this._exampleField;",
+		"\t// }",
+		"\t// protected set exampleField(v: unknown) {",
+		"\t//   this._exampleField=",
+		"\t//     typeof v === \"string\"",
+		"\t//       ? v",
+		"\t//       : this._exampleField !== undefined",
+		"\t//       ? this._exampleField",
+		"\t//       : this.getDefault().exampleField;",
+		"\t// }",
+		"\t/**",
+		"\t * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+		"\t * @param [isInit=true] ❕Solo para herencia❕, indica si esta clase debe iniciar las propiedaes",
+		"\t */",
+		"\tconstructor(base: Partial<ReturnType<$1[\"getDefault\"]>>, isInit = true) {",
+		"\t\tsuper(base, false);",
+		"\t\tif (isInit) this.initProps(base);",
+		"\t}",
+		"\t/**@returns todos los campos con sus valores predefinidos*/",
+		"\tprotected getDefault() {",
+		"\t\treturn $1.getDefault();",
+		"\t}",
+		"\t",
+		"\t//❗normalmente definidas en el padre, salvo que se quieran sobreescribir❗",
+		"\t// /**inicializa las propiedades de manera dinamica",
+		"\t//  *",
+		"\t//  * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+		"\t//  */",
+		"\t// protected initProps(base: Partial<ReturnType<$1[\"getDefault\"]>>): void {",
+		"\t//   for (const key in this.getDefault()) {",
+		"\t//     this[key] = base[key];",
+		"\t//   }",
+		"\t//   return;",
+		"\t// }",
+		"\t// /**reinicia una propiedad al valor predefinido",
+		"\t//  *",
+		"\t//  * @param key clave identificadora de la propiedad a reiniciar",
+		"\t//  */",
+		"\t// public resetPropByKey(key: keyof ReturnType<$1[\"getDefault\"]>): void {",
+		"\t//   const df = this.getDefault();",
+		"\t//   this[key] = df[key];",
+		"\t//   return;",
+		"\t// }",
+		"}",
+		""
+	],
+	"description": "clase hija con autoconstructor que a partir de propiedades predefinidas permite 3 opciones de personalización para sus propiedades"
+	},
+	"export_selfconstructor_abstract_Class_extends": {
+		"prefix": "export_selfconstructor_abstract_Class_extends",
+		"body": [
+			"/** *selfcontructor*",
+			" *",
+			" * ...",
+			" */",
+			"export abstract class $1 extends $2 implements ReturnType<$1[\"getDefault\"]> {",
+			"\t/**@returns todos los campos con sus valores predefinidos para instancias de esta clase*/",
+			"\tpublic static readonly getDefault = () => {",
+			"\t\tconst superDf = $2.getDefault();",
+			"\t\treturn {",
+			"\t\t\t...superDf,",
+			"\t\t\t//...aqui las propiedades",
+			"\t\t\t// exampleField: \"hello\", //tipo string dedicudo",
+			"\t\t};",
+			"\t};",
+			"\t/**@returns todas las constantes a usar en instancias de esta clase*/",
+			"\tprotected static readonly getCONSTANTS = () => {",
+			"\t\tconst superCONST = $2.getCONSTANTS();",
+			"\t\treturn {",
+			"\t\t\t...superCONST,",
+			"\t\t\t//..aqui las constantes",
+			"\t\t};",
+			"\t};",
+			"\t// private _exampleField: string;",
+			"\t// public get exampleField(): string {",
+			"\t//   return this._exampleField;",
+			"\t// }",
+			"\t// protected set exampleField(v: unknown) {",
+			"\t//   this._exampleField=",
+			"\t//     typeof v === \"string\"",
+			"\t//       ? v",
+			"\t//       : this._exampleField !== undefined",
+			"\t//       ? this._exampleField",
+			"\t//       : this.getDefault().exampleField;",
+			"\t// }",
+			"\t/**",
+			"\t * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+			"\t * @param [isInit=true] ❕Solo para herencia❕, indica si esta clase debe iniciar las propiedaes",
+			"\t */",
+			"\tconstructor(base: Partial<ReturnType<$1[\"getDefault\"]>>, isInit = true) {",
+			"\t\tsuper(base, false);",
+			"\t\tif (isInit) this.initProps(base);",
+			"\t}",
+			"\t/**@returns todos los campos con sus valores predefinidos*/",
+			"\tprotected getDefault() {",
+			"\t\treturn $1.getDefault();",
+			"\t}",
+			"\t",
+			"\t//❗normalmente definidas en el padre, salvo que se quieran sobreescribir❗",
+			"\t// /**inicializa las propiedades de manera dinamica",
+			"\t//  *",
+			"\t//  * @param base objeto literal con valores personalizados para iniicalizar las propiedades",
+			"\t//  */",
+			"\t// protected initProps(base: Partial<ReturnType<$1[\"getDefault\"]>>): void {",
+			"\t//   for (const key in this.getDefault()) {",
+			"\t//     this[key] = base[key];",
+			"\t//   }",
+			"\t//   return;",
+			"\t// }",
+			"\t// /**reinicia una propiedad al valor predefinido",
+			"\t//  *",
+			"\t//  * @param key clave identificadora de la propiedad a reiniciar",
+			"\t//  */",
+			"\t// public resetPropByKey(key: keyof ReturnType<$1[\"getDefault\"]>): void {",
+			"\t//   const df = this.getDefault();",
+			"\t//   this[key] = df[key];",
+			"\t//   return;",
+			"\t// }",
+			"}",
+			""
+		],
+		"description": "clase hija abstracta con autoconstructor que a partir de propiedades predefinidas permite 3 opciones de personalización para sus propiedades"
+	}	
 }
