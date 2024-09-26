@@ -1398,7 +1398,7 @@
 	"public_static_override_method": {
 		"prefix": "public_static_override_method",
 		"body": [
-			"public override static $1():$2{",
+			"public static override $1():$2{",
 			"\treturn;",
 			"}"
 		],
@@ -1407,7 +1407,7 @@
 	"public_static_override_method_param": {
 		"prefix": "public_static_override_method_param",
 		"body": [
-			"public override static $1($2):$3{",
+			"public static override $1($2):$3{",
 			"\treturn;",
 			"}"
 		],
