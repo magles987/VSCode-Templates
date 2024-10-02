@@ -2127,7 +2127,7 @@
 		"\t\t\tliteral[key] = this[key];",
 		"\t\t}",
 		"\t\t// literal = util.clone();",
-		"\t\treturn literal;",
+		"\t\treturn literal as any;",
 		"\t}",
 		"}"
 	],
@@ -2215,7 +2215,7 @@
 			"\t\t\tliteral[key] = this[key];",
 			"\t\t}",
 			"\t\t// literal = util.clone();",
-			"\t\treturn literal;",
+			"\t\treturn literal as any;",
 			"\t}",
 			"}"
 		],
@@ -2291,6 +2291,9 @@
 		"\t//   this[key] = df[key];",
 		"\t//   return;",
 		"\t// }",
+		"\tpublic override getLiteral(): ReturnType<$1[\"getDefault\"]>  {",
+		"\t\treturn super.getLiteral() as any;",
+		"\t}",
 		"}",
 		""
 	],
@@ -2366,6 +2369,9 @@
 			"\t//   this[key] = df[key];",
 			"\t//   return;",
 			"\t// }",
+			"\tpublic override getLiteral(): ReturnType<$1[\"getDefault\"]>  {",
+			"\t\treturn super.getLiteral() as any;",
+			"\t}",
 			"}",
 			""
 		],
