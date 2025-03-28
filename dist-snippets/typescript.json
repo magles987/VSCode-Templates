@@ -1934,7 +1934,7 @@
 			"\t/**  Almacena la instancia única de esta clase */",
 			"\tprivate static $1_instance: $1;",
 			"\t/**... */",
-			"\tconstructor() {}",
+			"\tprotected constructor() {}",
 			"\t/** @returns la instancia única de la clase*/",
 			"\tpublic static getInstance():$1{",
 			"\t\t$1.$1_instance = (typeof $1.$1_instance === 'object' && $1.$1_instance !== null) ?",
@@ -1960,7 +1960,7 @@
 			"\t * descrip...",
 			"\t * ",
 			"\t*/",
-			"\tconstructor() {",
+			"\tprotected constructor() {",
 			"\t\tsuper();",
 			"\t}",
 			"\t/** @returns la instancia única de la clase*/",
@@ -2134,7 +2134,6 @@
 		"\t\tfor (const key in this.getDefault()) {",
 		"\t\t\tliteral[key] = this[key];",
 		"\t\t}",
-		"\t\t// literal = util.clone();",
 		"\t\treturn literal as any;",
 		"\t}",
 		"}"
@@ -2234,7 +2233,6 @@
 			"\t\tfor (const key in this.getDefault()) {",
 			"\t\t\tliteral[key] = this[key];",
 			"\t\t}",
-			"\t\t// literal = util.clone();",
 			"\t\treturn literal as any;",
 			"\t}",
 			"}"
