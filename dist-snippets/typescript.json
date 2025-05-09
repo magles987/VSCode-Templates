@@ -1794,6 +1794,44 @@
 		  ],
 		"description": "propiedad abstracta get y set virtual (puede o no apuntar a una propiedad real de la clase)"
 	},		
+	"public_static_get_virtual": {
+		"prefix": "public_static_get_virtual",
+		"body": [
+			"/**... */",
+			"public static get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_static_set_virtual": {
+		"prefix": "public_static_set_virtual",
+		"body": [
+			"/**... */",
+			"public static set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"public_static_set_and_get_virtual": {
+		"prefix": "public_static_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"public static get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"public static set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},
 	"private_property": {
 		"prefix": "private_property",
 		"body": [
@@ -1810,6 +1848,82 @@
 		],
 		"description": "Propiedad o atributo privado y estatico de una clase"
 	},
+	"private_get_virtual": {
+		"prefix": "private_get_virtual",
+		"body": [
+			"/**... */",
+			"private get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"private_set_virtual": {
+		"prefix": "private_set_virtual",
+		"body": [
+			"/**... */",
+			"private set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},
+	"private_set_and_get_virtual": {
+		"prefix": "private_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"private get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"private set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"private_static_get_virtual": {
+		"prefix": "private_static_get_virtual",
+		"body": [
+			"/**... */",
+			"private static get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"private_static_set_virtual": {
+		"prefix": "private_static_set_virtual",
+		"body": [
+			"/**... */",
+			"private static set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},
+	"private_static_set_and_get_virtual": {
+		"prefix": "private_static_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"private static get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"private static set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
 	"protected_property": {
 		"prefix": "protected_property",
 		"body": [
@@ -1931,6 +2045,44 @@
 		  ],
 		"description": "propiedad abstracta get y set virtual (puede o no apuntar a una propiedad real de la clase)"
 	},		
+	"protected_static_get_virtual": {
+		"prefix": "protected_static_get_virtual",
+		"body": [
+			"/**... */",
+			"protected static get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}"
+		],
+		"description": "propiedad get virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_static_set_virtual": {
+		"prefix": "protected_static_set_virtual",
+		"body": [
+			"/**... */",
+			"protected static set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
+	"protected_static_set_and_get_virtual": {
+		"prefix": "protected_static_set_and_get_virtual",
+		"body": [
+			"/**... */",
+			"protected static get $1(): ${3:Type} {",
+			"\tlet p = this.$2;",
+			"\treturn p;",
+			"}",
+			"/**... */",
+			"protected static set $1(v: ${3:Type}) {",
+			"\tthis.$2 = v;",
+			"\treturn;",
+			"}"
+		  ],
+		"description": "propiedad get y set virtual (puede o no apuntar a una propiedad real de la clase)"
+	},	
 	//████Especializacion Patrones POO████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  
 	"export_Class_singleton": {
 		"prefix": "export_Class_singleton",
