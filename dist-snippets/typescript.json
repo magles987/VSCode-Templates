@@ -553,8 +553,15 @@
 		"body": [
 		  "const {} = $1;"
 		],
-		"description": "establece de destructuracion de un objeto almacenada en una constante"
+		"description": "Destructuración de un objeto almacenado en una constante"
 	},
+	"const_destructure_Array": {
+		"prefix": "const_destructure_Array",
+		"body": [
+		  "const [] = $1;"
+		],
+		"description": "Destructuración de un array almacenado en una constante"
+	},	
 	"function_basic": {
 		"prefix": "function_basic",
 		"body": [
@@ -563,7 +570,7 @@
 			"\treturn;",
 			"}"
 		],
-		"description": "funcion basica sin parametro"
+		"description": "Función básica sin parámetros"
 	},
 	"function_param_basic": {
 		"prefix": "function_param_basic",
@@ -573,7 +580,7 @@
 			"\treturn;",
 			"}"
 		],
-		"description": "funcion basica con parametro"
+		"description": "Función básica con parámetros"
 	},
 	"arrow_fn_bq": {
 		"prefix": "arrow_fn_bq",
@@ -582,28 +589,28 @@
 			"\treturn;",
 			"}"
 		],
-		"description": "arrow function con bloque y retorno"
+		"description": "Arrow function con bloque de código y retorno explícito"
 	},
 	"arrow_fn_generic_error": {
 		"prefix": "arrow_fn_generic_error",
 		"body": [
 			"(error)=>{ console.log(error) }"
 		],
-		"description": "arrow function con bloque de error genérico"
+		"description": "Arrow function para manejo genérico de errores (console.log)"
 	},
 	"array_cast": {
 		"prefix": "array_cast",
 		"body": [
 			"$1 = (Array.isArray($1)) ? $1 : [$1];"
 		],
-		"description": "determina si la variable es array y si no la transforma en array (recordar: se usa para una variable existente, si se quiere inicializar la variable se debe anteponer el   let  o  const  correspondiente)"
+		"description": "Convierte una variable en array si no lo es (para variables ya declaradas)"
 	},
 	"if_oneline_with_return": {
 		"prefix": "if_oneline_with_return",
 		"body": [
 			"if ($1) return $2;"
 		],
-		"description": "sentecia `if` sin bloques y con retorno inmediato "
+		"description": "If de una línea con retorno inmediato (sin bloques)"
 	},	
 	"if_else_if_assignment": {
 		"prefix": "if_else_if_assignment",
@@ -613,7 +620,7 @@
 			"else if(${4:Condition}) $1 = ${5:value};",
 			"else $1 = ${6:value};"
 		  ],
-		"description": "cascada de `if` else if else para asignamiento por seleccion sin bloque"
+		"description": "Asignación condicional con if/else if/else (sin bloques)"
 	},	
 	"if_else__if_bq": {
 		"prefix": "if_else__if_bq",
@@ -626,7 +633,7 @@
 			"\t",
 			"}"
 		  ],
-		"description": "cascada de if else if else básico con logica encapsulada en bloque"
+		"description": "Estructura if/else if/else con bloques de código"
 	},	
 	"switch_bq": {
 		"prefix": "switch_bq",
@@ -643,7 +650,7 @@
 			"  }break;",
 			"}"
 		  ],
-		"description": "switch case con bloques en cada caso"
+		"description": "Estructura switch/case con bloques para cada caso"
 	},		
 	"if_undefined_or_null": {
 		"prefix": "if_undefined_or_null",
@@ -652,7 +659,7 @@
 			"\t$2",
 			"}"
 		],
-		"description": "determina si la variable es `null` o `undefined`"
+		"description": "Verifica si una variable es undefined o null"
 	},
 	"if_object": {
 		"prefix": "if_object",
@@ -661,7 +668,7 @@
 		  "\t$2",
 		  "}"
 		],
-		"description": "determina si es un tipo objeto (incluidos arrays)"
+		"description": "Verifica si una variable es de tipo object (incluye arrays)"
 	},	
 	"if_array_empty": {
 		"prefix": "if_array_empty",
@@ -670,7 +677,7 @@
 			"\t$2",
 			"}"
 		],
-		"description": "determina si es un array y esta vacio"
+		"description": "Verifica si un array está vacío"
 	},
 	"if_array_not_empty": {
 		"prefix": "if_array_not_empty",
@@ -679,7 +686,7 @@
 			"\t$2",
 			"}"
 		],
-		"description": "determina si es un array y no esta vacio"
+		"description": "Verifica si un array no está vacío"
 	},	
 	"if_object_not_Array": {
 		"prefix": "if_object_not_Array",
@@ -688,7 +695,7 @@
 		  "\t$2",
 		  "}"
 		],
-		"description": "determina si es un tipo objeto (excluyendo el tipo array)"
+		"description": "Verifica si una variable es un objeto (excluyendo arrays)"
 	},	
 	"if_float_number" : {
 		"prefix": "if_float_number",
@@ -698,7 +705,7 @@
 			"\t$3",
 			"}"
 		  ],
-		"description": "determina si al hacer el cast es un numero flotante"
+		"description": "Verifica si un valor puede convertirse a número flotante"
 	},
 	"if_float_number_cast": {
 		"prefix": "if_float_number_cast",
@@ -706,7 +713,7 @@
 		  "let $1 = (!isNaN(parseFloat((($1) as unknown) as string))) ?",
 		  "\tparseFloat((($1) as unknown) as string) : $2 ;"
 		],
-		"description": "intenta convertir cualquier valor a numero flotante o asignar un numero por defecto en `$2`; si no permite el tipado se debe usar otro nombre de variable en `let $1` "
+		"description": "Convierte un valor a número flotante o asigna un valor por defecto ($2)"
 	},	
 	"if_object_with_properties": {
 		"prefix": "if_object_with_properties",
@@ -715,7 +722,7 @@
 			"\t$2",
 			"}"
 		],
-		"description": "Determina si la variable es un objeto y tiene propiedades"
+		"description": "Verifica si un objeto tiene propiedades"
 	},
 	"if_object_with_properties_not_array": {
 		"prefix": "if_object_with_properties_not_array",
@@ -724,7 +731,7 @@
 			"\t$2",
 			"}"
 		],
-		"description": "Determina si la variable es un objeto (excluyendo el tipo array) y tiene propiedades"
+		"description": "Verifica si un objeto (no array) tiene propiedades"
 	},	
 	"new_promise": {
 		"prefix": "new_promise",
@@ -734,7 +741,7 @@
 			"\t//return reject();",
 			"});"
 		],
-		"description": "crea una promesa vacia (se debe definir al menos el resolve() o reject())"
+		"description": "Crea una nueva promesa (requiere definir resolve/reject)"
 	},
 	"while_array_pop": {
 		"prefix": "while_array_pop",
@@ -744,21 +751,21 @@
 			"\t$1.pop();",
 			"}"
 		],
-		"description": "crea un while con la opcion de ir eliminando elementos de un array desde el ultimo al primero"
+		"description": "Elimina elementos de un array (desde el último) usando while"
 	},
 	"promise_time_generated": {
 		"prefix": "promise_time_generated",
 		"body": [
 		  "new Promise( resolve => setTimeout(resolve, 1000));"
 		],
-		"description": "genera un delay en base a promesas"
+		"description": "Retraso asíncrono de 1 segundo usando promesas"
 	},
 	"await_promise_time_generated": {
 		"prefix": "await_promise_time_generated",
 		"body": [
 		  "await new Promise( resolve => setTimeout(resolve, 1000));"
 		],
-		"description": "genera un delay en base a promesas con prefijo de await"
+		"description": "Retraso asíncrono de 1 segundo con await"
 	},
 	"await_promise_time_generated_with_code": {
 		"prefix": "await_promise_time_generated_with_code",
@@ -768,14 +775,14 @@
 		  " \treturn resolve(undefined);",
 		  "}, 1000));"
 		],
-		"description": "genera un delay en base a promesas con prefijo de await y con opcion de codigo"
+		"description": "Retraso asíncrono de 1 segundo con await y bloque de código personalizado"
 	},	
 	"ternary_assignment": {
 		"prefix": "ternary_assignment",
 		"body": [
 		  "$1 = ($2)? $3: $4;"
 		],
-		"description": "asignamiento ternario a una variable"
+		"description": "Asignación condicional con operador ternario"
 	},	
 	"array_map_generic": {
 		"prefix": "array_map_generic",
@@ -785,7 +792,7 @@
 			"\treturn;",
 			"});"
 		],
-		"description": "implementacion generica de un array.map"
+		"description": "Implementación genérica de Array.map"
 	},	
 	//████Tipos y utilidades exclusivas typescript████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 	"cast_any_cast": {
@@ -803,6 +810,16 @@
 		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para asignar un valor a un objeto en base a otro)"
 	},
 	//████Especializacion del codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+	"export_index_file": {
+		"prefix": "export_index_file",
+		"body": [
+		  "// Exportacion masiva agrupada según criterio (exportacion barril)",
+		  "export * from \"./file1\";",
+		  "export * from \"./file2\";",
+		  "export * from \"./fileN\";"
+		],
+		"description": "lineas de exportación agrupadas en un archivo de indice (organiza exportaciones masivas)"
+	},		
 	"export_type": {
 		"prefix": "export_type",
 		"body": [
