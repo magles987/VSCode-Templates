@@ -810,10 +810,10 @@
 		"description": "permite hacer un cast entre un objeto a otro sin que tengan relacion directa (se usa mucho para asignar un valor a un objeto en base a otro)"
 	},
 	//████Especializacion del codigo████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-	"export_index_file": {
-		"prefix": "export_index_file",
+	"export_index_barrel": {
+		"prefix": "export_index_barrel",
 		"body": [
-		  "// Exportacion masiva agrupada según criterio (exportacion barril)",
+		  "// Exportación masiva agrupada según criterio (exportación barril)",
 		  "export * from \"./file1\";",
 		  "export * from \"./file2\";",
 		  "export * from \"./fileN\";"
