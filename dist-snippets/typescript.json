@@ -612,6 +612,13 @@
 		],
 		"description": "If de una línea con retorno inmediato (sin bloques)"
 	},	
+	"if_oneline_with_throw": {
+		"prefix": "if_oneline_with_throw",
+		"body": [
+			"if ($1) throw new Error(``);"
+		],
+		"description": "If de una línea con lanzador de excepción inmediato y construcción de error genérico (sin bloques)"
+	},		
 	"if_else_if_assignment": {
 		"prefix": "if_else_if_assignment",
 		"body": [
