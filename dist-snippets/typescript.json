@@ -1816,8 +1816,8 @@
 		"prefix": "public_static_set_virtual",
 		"body": [
 			"/**... */",
-			"public static set $1(v: ${3:Type}) {",
-			"\tthis.$2 = v;",
+			"public static set $1(v: ${4:Type}) {",
+			"\t$2.$3 = v;",
 			"\treturn;",
 			"}"
 		  ],
@@ -1908,8 +1908,8 @@
 		"prefix": "private_static_set_virtual",
 		"body": [
 			"/**... */",
-			"private static set $1(v: ${3:Type}) {",
-			"\tthis.$2 = v;",
+			"private static set $1(v: ${4:Type}) {",
+			"\t$2.$3 = v;",
 			"\treturn;",
 			"}"
 		  ],
@@ -2067,8 +2067,8 @@
 		"prefix": "protected_static_set_virtual",
 		"body": [
 			"/**... */",
-			"protected static set $1(v: ${3:Type}) {",
-			"\tthis.$2 = v;",
+			"protected static set $1(v: ${4:Type}) {",
+			"\t$2.$3 = v;",
 			"\treturn;",
 			"}"
 		  ],
