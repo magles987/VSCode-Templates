@@ -911,6 +911,24 @@
 		],
 		"description": "declara una enumeracion y la exporta"
 	},
+	"export_ConstAsEnum": {
+		"prefix": "export_ConstAsEnum",
+		"body": [
+			"/**... */",
+			"export const $1 = {",
+			"\t$2:$3",
+			"} as const"
+		],
+		"description": "declara un objeto literal constante y lo exporta (nuevo paradigma que reemplaza a los enums)"
+	},
+	"export_TKeysForConstAsEnum": {
+		"prefix": "export_TKeysForConstAsEnum",
+		"body": [
+			"/**... */",
+			"export type $1 = keyof typeof $2;"
+		],
+		"description": "declara como tipo las claves identificadoras de cada propiedad de un const usado como el antiguo enum."
+	},	
 	"export_var": {
 		"prefix": "export_var",
 		"body": [			
